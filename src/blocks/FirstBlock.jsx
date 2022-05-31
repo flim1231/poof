@@ -31,13 +31,26 @@ function FirstBlock() {
             {/* Main elements 1-st block */}
             <div className={cl.main_container}>
                 {/* Titles 1-st block */}
-                <div className={cl.main_title}>
-                    <h1 className={cl.main_title_text}>Iceland</h1>
+                <div className={cl.main_titles}>
+                    <div className={cl.main_title}>
+                        <h1 className={cl.main_title_text}>Iceland</h1>
+                    </div>
+                    <div className={cl.main_subtitle}>
+                        <h2 className={cl.main_subtitle_text}>Experience the splendor of nature</h2>
+                    </div>
                 </div>
-                <div className={cl.main_subtitle}>
-                    <h2 className={cl.main_subtitle_text}>Experience the splendor of nature</h2>
-                </div>
-            </div> 
+                {/* Rhomb */}
+                <div className={cl.main_rhombs}>
+                    <div className={cl.rhomb_body_first}>
+                        <span className={cl.rhombs_figure_first}></span>
+                    </div>
+                    <div className={cl.rhomb_body_second}><span className={cl.rhombs_figure_second}></span></div>
+                    <div className={cl.rhomb_body_third}><span className={cl.rhombs_figure_third}></span></div>
+                    <div className={cl.rhomb_body_fourth}><span className={cl.rhombs_figure_fourth}></span></div>
+                    <div className={cl.rhomb_body_fifth}><span className={cl.rhombs_figure_fifth}></span></div>
+                </div> 
+            </div>
+
         </div>
     );
 }

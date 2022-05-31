@@ -22,7 +22,8 @@
 
 /* First block */
 .wrapper {
-    width: 1920px;
+    width: 1950px;
+    height: 1080px;
     margin: 0 auto;
 }
 /* Header */
@@ -31,6 +32,7 @@
     height: 129px;
 
     display: flex;
+    justify-content: space-between;
     align-items: flex-end;
 }
 /* Header menu */
@@ -50,7 +52,6 @@
 
     list-style-type: none;
 
-    color: #FFFFFF;
 
     font-family: 'Oswald';
     font-size: 32px;
@@ -64,15 +65,15 @@
 .header_logo {
 
     display: flex;
-    flex: 1 1 auto;
-    justify-content: center;
+
+    justify-content: center;    
 } 
 .header_logo::after {
     content: '';
 
     position: absolute;
-    left: 950.5px;
-    top: 127px;
+    left: 940px;
+    top: 128px;
 
     width: 199.5px;
 
@@ -81,6 +82,7 @@
 }
 .logo_text {
     text-transform: uppercase;
+
 
     font-family: 'Oswald';
     font-style: normal;
@@ -94,13 +96,11 @@
 /* Header phonenumber */
 .header_phonenumber {
 
-    margin-left: 10px;
 
     width: 241px;
     height: 47px;   
 }
 .header_number {
-
 
 
     font-family: 'Oswald';
@@ -114,5 +114,151 @@
 
 /* Main container */
 .main_container {
-    width: 1410px; 
+    display: flex;
+    flex-direction: column;
+    padding-top: 300px;
 }
+/* Text on 1-st block */
+.main_title {
+}
+.main_title_text {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 150px;
+    line-height: 222px;
+    letter-spacing: 0.215em;
+}
+
+.main_title::before {
+    content: '';
+    position: absolute;
+    top: 545px;
+    left: 713px;
+    width: 150px;
+    border: 2px solid #000;
+}
+.main_title::after {
+    content: '';
+    position: absolute;
+    top: 547px;
+    left: 1503px;
+    width: 150px;
+    border: 2px solid #000;
+}
+
+
+
+.main_subtitle {
+
+}
+.main_subtitle_text {
+    font-family: 'Marianna';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 96px;
+    line-height: 121px;
+}
+/* Rhombs for slider */
+.main_rhombs {
+    display: flex;
+    justify-content: center;
+    margin-top: 219px;
+}
+.rhomb_body_first {
+    width: 15px;
+    height: 15px;
+
+    line-height: 60px;
+    text-align: center;
+
+    background: #000;
+
+    margin: 20px;
+    
+    transform: rotate(45deg);
+}
+
+.rhombs_figure_first {
+    display: block;
+    transform: rotate(-45deg);
+    padding-left: 20px;  
+}
+
+.rhomb_body_second {
+    width: 15px;
+    height: 15px;
+
+    line-height: 60px;
+    text-align: center;
+
+    background: #FFF500;
+
+    margin: 20px;
+
+    transform: rotate(45deg);
+}
+
+.rhombs_figure_second {
+    display: block;
+    transform: rotate(-45deg);
+}
+
+.rhomb_body_third {
+    width: 15px;
+    height: 15px;
+
+    line-height: 60px;
+    text-align: center;
+
+    background: #000;
+
+    margin: 20px;
+
+    transform: rotate(45deg);
+}
+
+.rhombs_figure_third {
+    display: block;
+    transform: rotate(-45deg);  
+}
+
+.rhomb_body_fourth {
+    width: 15px;
+    height: 15px;
+
+    line-height: 60px;
+    text-align: center;
+
+    background: #000;
+
+    margin: 20px;
+
+    transform: rotate(45deg);
+}
+
+.rhombs_figure_fourth {
+    display: block;
+    transform: rotate(-45deg);  
+}
+
+.rhomb_body_fifth {
+    width: 15px;
+    height: 15px;
+
+    line-height: 60px;
+    text-align: center;
+
+    background: #000;
+
+    margin: 20px;
+
+    transform: rotate(45deg);
+}
+
+.rhombs_figure_fifth {
+    display: block;
+    transform: rotate(-45deg);  
+}
+
+
