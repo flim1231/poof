@@ -1,5 +1,5 @@
 import React from 'react';
-import clas from './style.module.css'
+import cl from './TwoBlock.module.css'
 
 function FirstBlock() {
     return ( 
