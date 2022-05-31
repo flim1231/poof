@@ -1,0 +1,118 @@
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'Marianna';
+    src: url('./../fonts/Marianna.eot');
+    src: url('./../fonts/Marianna.eot?#iefix') format('embedded-opentype'),
+        url('./../fonts/Marianna.woff2') format('woff2'),
+        url('./../fonts/Marianna.woff') format('woff'),
+        url('./../fonts/Marianna.ttf') format('truetype'),
+        url('./../fonts/Marianna.svg#Marianna') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500&display=swap');
+
+/* First block */
+.wrapper {
+    width: 1920px;
+    margin: 0 auto;
+}
+/* Header */
+.header_container {
+    width: 1410px;
+    height: 129px;
+
+    display: flex;
+    align-items: flex-end;
+}
+/* Header menu */
+.header_menu {
+}
+.menu_body {
+
+}
+.menu_list {
+    display: flex;
+}
+.list_item {
+
+    display: flex;
+
+    padding-right: 80px;
+
+    list-style-type: none;
+
+    color: #FFFFFF;
+
+    font-family: 'Oswald';
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 47px;
+}
+.list_link {
+    text-decoration: none;
+}
+/* Header logo */
+.header_logo {
+
+    display: flex;
+    flex: 1 1 auto;
+    justify-content: center;
+} 
+.header_logo::after {
+    content: '';
+
+    position: absolute;
+    left: 950.5px;
+    top: 127px;
+
+    width: 199.5px;
+
+    border: 3px solid #FFF500;
+    filter: blur(2px);
+}
+.logo_text {
+    text-transform: uppercase;
+
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 53px;
+
+
+
+}
+/* Header phonenumber */
+.header_phonenumber {
+
+    margin-left: 10px;
+
+    width: 241px;
+    height: 47px;   
+}
+.header_number {
+
+
+
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 47px;
+
+}
+
+
+/* Main container */
+.main_container {
+    width: 1410px; 
+}

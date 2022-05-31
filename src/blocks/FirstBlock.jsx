@@ -1,32 +1,44 @@
 import React from 'react';
-import clas from './style.module.css';
+import cl from './FirstBlock.module.css'
 
 function FirstBlock() {
     return ( 
-    <div className="wrapper">
-        {/* Header */}
-        <div className="header_container">
+        <div className={cl.wrapper}>
+            {/* header elements 1-st block */}
+            <div className={cl.header_container}>
+                {/* Header menu */}
+                <div className={cl.header_menu}>
+                    <nav className={cl.menu_body}>
+                        <ul className={cl.menu_list}>
+                            <li className={cl.list_item}><a href="#" className={cl.list_link}>Route</a></li>
+                            <li className={cl.list_item}><a href="#" className={cl.list_link}>Dates</a></li>
+                            <li className={cl.list_item}><a href="#" className={cl.list_link}>About us</a></li>
+                        </ul>
+                    </nav>
+                </div>
 
-        {/* Header menu */}
-            <div className="header_menu">
-                <nav className="menu_body">
-                    <ul className="menu_list">
-                        <li className="list_item"><a href="#" className="list_link">Route</a></li>
-                        <li className="list_item"><a href="#" className="list_link">Dates</a></li>
-                        <li className="list_item"><a href="#" className="list_link">About us</a></li>
-                    </ul>
-                </nav>
+                {/* Header logo */}
+                <div className={cl.header_logo}>
+                    <span className={cl.logo_text}>Smart Travel</span>
+                </div>
+
+                {/* Header number */}
+                <div className={cl.header_phonenumber}>
+                    <span className={cl.header_number}>+375 (28) 829 49 24 </span>
+                </div>
+
             </div>
-        {/* Header logo */}
-            <div className="header_logo">
-                    <span className="logo_text">Smart Travel</span>
-            </div>
+            {/* Main elements 1-st block */}
+            <div className={cl.main_container}>
+                {/* Titles 1-st block */}
+                <div className={cl.main_title}>
+                    <h1 className={cl.main_title_text}>Iceland</h1>
+                </div>
+                <div className={cl.main_subtitle}>
+                    <h2 className={cl.main_subtitle_text}>Experience the splendor of nature</h2>
+                </div>
+            </div> 
         </div>
-        {/* Header phonenumber */}
-        <div className="header_phonenumber">
-            <span className="number">+375 (28) 829 49 24 </span>
-        </div>
-    </div>
     );
 }
 
