@@ -26,7 +26,7 @@ function FirstBlock() {
                 <div className={cl.header_phonenumber}>
                     <span className={cl.header_number}>+375 (28) 829 49 24 </span>
                 </div>
-
+                {/* Burger */}
             </div>
             {/* Main elements 1-st block */}
             <div className={cl.main_container}>
