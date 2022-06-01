@@ -10,9 +10,9 @@ function FirstBlock() {
                 <div className={cl.header_menu}>
                     <nav className={cl.menu_body}>
                         <ul className={cl.menu_list}>
-                            <li className={cl.list_item}><a href="#" className={cl.list_link}>Route</a></li>
-                            <li className={cl.list_item}><a href="#" className={cl.list_link}>Dates</a></li>
-                            <li className={cl.list_item}><a href="#" className={cl.list_link}>About us</a></li>
+                            <li className={cl.list_item}><a href="#">Route</a></li>
+                            <li className={cl.list_item}><a href="#">Dates</a></li>
+                            <li className={cl.list_item}><a href="#">About us</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -41,13 +41,15 @@ function FirstBlock() {
                 </div>
                 {/* Rhomb */}
                 <div className={cl.main_rhombs}>
-                    <div className={cl.rhomb_body_first}>
-                        <span className={cl.rhombs_figure_first}></span>
-                    </div>
-                    <div className={cl.rhomb_body_second}><span className={cl.rhombs_figure_second}></span></div>
-                    <div className={cl.rhomb_body_third}><span className={cl.rhombs_figure_third}></span></div>
-                    <div className={cl.rhomb_body_fourth}><span className={cl.rhombs_figure_fourth}></span></div>
-                    <div className={cl.rhomb_body_fifth}><span className={cl.rhombs_figure_fifth}></span></div>
+                    <div className={cl.rhombs_first_body}></div>
+                        <a href="#"></a>
+                    <div className={cl.rhombs_second_body}></div>
+
+                    <div className={cl.rhombs_third_body}></div>
+
+                    <div className={cl.rhombs_fourth_body}></div>
+
+                    <div className={cl.rhombs_fifth_body}></div>
                 </div> 
             </div>
 

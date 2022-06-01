@@ -24,25 +24,24 @@
 .wrapper {
     width: 1950px;
     height: 1080px;
-    margin: 0 auto;
 }
 /* Header */
 .header_container {
-    width: 1410px;
+    min-width: 1410px;
     height: 129px;
 
     
 
-    display: inline-grid;
+    display: grid;
     align-content: end;
-    justify-items: center;
     grid-template-areas: "menu logo number";
 }
 /* Header menu */
 .header_menu {
 
     display: grid;
-    grid-area: menu;
+    justify-self: end   ;
+
 }
 .menu_body {
 
@@ -79,18 +78,20 @@
     border-bottom: 3px solid #000;
 }
 
-.list_link {
+.menu_list a {
     text-decoration: none;
 }
 /* Header logo */
 .header_logo {
 
-    margin-right: 230px;
 
-    grid-area: logo;
+    display: inline-grid;
+    justify-self: center;
+    grid-area: logo; 
 
 }
-.header_logo::after {
+.header_logo:hover::after {
+
 
     content: '';
     
@@ -98,12 +99,12 @@
     height: 100px;
 
     position: absolute;
-    right: 1104px;
+    right: 1215px;
     top: 27px;
 
     border-bottom: solid #FFF500;
 
-    filter: blur(2px);
+    filter: blur(1px);
 } 
 .logo_text {
     text-transform: uppercase;
@@ -121,15 +122,15 @@
 /* Header phonenumber */
 .header_phonenumber {
     display: inline-grid;
-    justify-self: end;
     grid-area: number;
+    justify-self: end;  
 
     width: 241px;
-    height: 47px;   
+    height: 47px;  
 }
 .header_number {
 
-
+    
 
     font-family: 'Oswald';
     font-style: normal;
@@ -140,13 +141,58 @@
 }
 
 /* Main container */
-.main_container {
+.main_container {    
+    height: 941px;
+
     display: grid;
+    align-content: center;
+    justify-content: center;
+
+    margin-left: 240px;
+
 }
 /* Text on 1-st block */
+.main_titles {
+    grid-template: 957px 863px / 222px 121px;
+}
 .main_title {
+
+}
+.main_title::before {
+
+    content: '';
+
+    width: 150px;
+    height: 2px;
+
+    position: absolute;
+    top: 548px;
+    left: 592px;
+
+    color: #000;
+
+    border: 2px solid #000;
+}
+.main_title::after {
+
+    content: '';
+
+    width: 150px;
+    height: 2px;
+
+    position: absolute;
+    top: 548px;
+    left: 1383px;
+
+
+
+    border: 2px solid #000;
+
 }
 .main_title_text {
+
+
+
     font-family: 'Oswald';
     font-style: normal;
     font-weight: 300;
@@ -160,14 +206,92 @@
 
 
 .main_subtitle {
-
+    grid-area: subtitle;
 }
 .main_subtitle_text {
+
+
+
     font-family: 'Marianna';
     font-style: normal;
     font-weight: 400;
     font-size: 96px;
     line-height: 121px;
+}
+/* Rhombs for slider */
+
+.main_rhombs {
+    height: 1080px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding-bottom: 76px;
+}
+
+
+.rhombs_first_body {
+    width: 15px;
+    height: 15px;
+
+
+
+    background: #000;
+
+    transform: rotate(-45deg);
+
+
+}
+.rhombs_second_body {
+    width: 15px;
+    height: 15px;
+
+
+
+    background:  #FFF500;
+
+    transform: rotate(-45deg);
+
+}
+.rhombs_third_body {
+    width: 15px;
+    height: 15px;
+
+
+
+    background: #000;
+
+    transform: rotate(-45deg);
+
+}
+.rhombs_fourth_body {
+    width: 15px;
+    height: 15px;
+
+
+
+    background: #000;
+
+    transform: rotate(-45deg);
+
+}
+.rhombs_fifth_body {
+    width: 15px;
+    height: 15px;
+
+
+
+    background: #000;
+
+    transform: rotate(-45deg);
+
+}
+
+.rhombs_first_body,
+.rhombs_second_body,
+.rhombs_third_body,
+.rhombs_fourth_body,
+.rhombs_fifth_body {
+    margin-right: 20px;
 }
 
 
