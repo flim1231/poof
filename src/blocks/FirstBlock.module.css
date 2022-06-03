@@ -87,7 +87,7 @@ select {
 /* First block */
 .wrapper {
     min-width: 1950px;
-    height: 1080px;
+    min-height: 1980px;
 
 
 
