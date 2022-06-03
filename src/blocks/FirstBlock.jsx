@@ -12,7 +12,7 @@ function FirstBlock() {
                         <ul className={cl.menu_list}>
                             <li className={cl.list_item}><a href="#">Route</a></li>
                             <li className={cl.list_item}><a href="#">Dates</a></li>
-                            <li className={cl.list_item}><a href="#">About us</a></li>
+                            <li className={cl.list_item}><a href="#" className={cl.list_link}>About us</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -42,7 +42,7 @@ function FirstBlock() {
                 {/* Rhomb */}
                 <div className={cl.main_rhombs}>
                     <div className={cl.rhombs_first_body}></div>
-                        <a href="#"></a>
+
                     <div className={cl.rhombs_second_body}></div>
 
                     <div className={cl.rhombs_third_body}></div>
@@ -52,7 +52,6 @@ function FirstBlock() {
                     <div className={cl.rhombs_fifth_body}></div>
                 </div> 
             </div>
-
         </div>
     );
 }
