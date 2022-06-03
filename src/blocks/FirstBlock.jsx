@@ -10,9 +10,9 @@ function FirstBlock() {
                 <div className={cl.header_menu}>
                     <nav className={cl.menu_body}>
                         <ul className={cl.menu_list}>
-                            <li className={cl.list_item}><a href="#">Route</a></li>
-                            <li className={cl.list_item}><a href="#">Dates</a></li>
-                            <li className={cl.list_item}><a href="#" className={cl.list_link}>About us</a></li>
+                            <li className={cl.list_item1}><a href="#">Route</a></li>
+                            <li className={cl.list_item2}><a href="#">Dates</a></li>
+                            <li className={cl.list_item3}><a href="#">About us</a></li>
                         </ul>
                     </nav>
                 </div>

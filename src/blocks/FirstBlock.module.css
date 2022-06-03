@@ -1,8 +1,72 @@
-
-* {
-    padding: 0;
-    margin: 0;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////// */
 
 @font-face {
     font-family: 'Marianna';
@@ -27,8 +91,7 @@
 
 
 
-    background-image: url('./../imgs/firstblock/background.svg');
-    background-repeat: no-repeat;
+    background: url('./../imgs/firstblock/background.svg') no-repeat;
     background-size: cover;
 }
 /* Header */
@@ -56,7 +119,9 @@
 .menu_list {
 
 }
-.list_item {
+.list_item1,
+.list_item2,
+.list_item3 {
 
     display: inline-grid;
 
@@ -72,7 +137,21 @@
     font-weight: 300;
     line-height: 47px;
 }
-.list_item:hover::after {
+.list_item1::after,.list_item2::after {
+    content: '';
+
+    position: absolute;
+    top: 120px;
+
+    width: 0;
+
+    
+    border-bottom: 3px solid #000;
+
+    transition: all .3s ease;
+
+}
+.list_item1:hover::after,.list_item2:hover::after {
     content: '';
 
     position: absolute;
@@ -83,12 +162,30 @@
     width: 64px;
     height: 10px;
 
-    transition: all 5s 0s;
+
+    border-bottom: 3px solid #000;
+
+    transition: all .3s ease;
+
+    
+}
+
+.list_item3::before {
+    content: '';
+
+    position: absolute;
+    top: 120px;
+
+    color: #000;
+
+    width: 0px;
+    height: 10px;
+
+    transition: all .3s ease-in-out;
 
     border-bottom: 3px solid #000;
 }
-
-.list_link:hover::before {
+.list_item3:hover::before {
     content: '';
 
     position: absolute;
@@ -99,7 +196,7 @@
     width: 96px;
     height: 10px;
 
-    transition: all 5s 0s;
+    transition: all .3s ease-in-out;
 
     border-bottom: 3px solid #000;
 }
@@ -134,7 +231,20 @@
 
 
 }
+.logo_text::before {
+    content: '';
+    
+    width: 0px;
+    height: 100px;
 
+    position: absolute;
+    top: 27px;
+
+    border-bottom: solid #FFF500;
+
+    transition: all .3s ease-in-out;
+
+}
 .logo_text:hover::before {
 
 
@@ -147,6 +257,27 @@
     top: 27px;
 
     border-bottom: solid #FFF500;
+
+    transition: all .3s ease-in-out;
+
+}
+
+.logo_text::after {
+    content: '';
+    
+    width: 0px;
+    height: 100px;
+
+    position: absolute;
+    right: 1230px;
+    top: 27px;
+
+    border-bottom: solid #FFF500;
+
+    filter: blur(6px);
+
+    transition: all .3s ease-in-out;
+
 }
 .logo_text:hover::after {
 
@@ -163,6 +294,9 @@
     border-bottom: solid #FFF500;
 
     filter: blur(6px);
+
+    transition: all .3s ease-in-out;
+
 } 
 
 /* Header phonenumber */
@@ -188,6 +322,8 @@
 
 /* Main container */
 .main_container {
+    
+
     
     height: 941px;
 
@@ -271,7 +407,6 @@
 /* Rhombs for slider */
 
 .main_rhombs {
-
 
 
     display: flex;
