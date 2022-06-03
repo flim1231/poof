@@ -87,13 +87,19 @@ select {
 /* First block */
 .wrapper {
     min-width: 1950px;
-    min-height: 1980px;
+    min-height: 2110px;
 
+    position: relative;
 
-
-    background: url('./../imgs/firstblock/background.svg') no-repeat;
+    background:  url('./../imgs/firstblock/background.svg') no-repeat center /cover, rgba(0,0,0,30%);
+    background-blend-mode: multiply;
     background-size: cover;
+
+    z-index: 3;
 }
+
+
+
 /* Header */
 .header_container {
     height: 129px;
@@ -105,7 +111,7 @@ select {
 
     grid-template-areas: "menu logo number";
 
-
+    z-index: 3;
 }
 /* Header menu */
 .header_menu {
@@ -140,15 +146,14 @@ select {
 .list_item1::after,.list_item2::after {
     content: '';
 
-    position: absolute;
-    top: 120px;
+
 
     width: 0;
 
     
-    border-bottom: 3px solid #000;
+    border-bottom: 3px solid #fff;
 
-    transition: all .3s ease;
+    transition: all .3s ease-in-out;
 
 }
 .list_item1:hover::after,.list_item2:hover::after {
@@ -157,18 +162,19 @@ select {
     position: absolute;
     top: 120px;
 
-    color: #000;
+    color: #fff;
 
     width: 64px;
     height: 10px;
 
 
-    border-bottom: 3px solid #000;
+    border-bottom: 3px solid #fff;
 
-    transition: all .3s ease;
+    transition: all .3s ease-in-out;
 
     
 }
+
 
 .list_item3::before {
     content: '';
@@ -176,14 +182,14 @@ select {
     position: absolute;
     top: 120px;
 
-    color: #000;
+
 
     width: 0px;
     height: 10px;
 
     transition: all .3s ease-in-out;
 
-    border-bottom: 3px solid #000;
+    border-bottom: 3px solid #fff;
 }
 .list_item3:hover::before {
     content: '';
@@ -191,14 +197,14 @@ select {
     position: absolute;
     top: 120px;
 
-    color: #000;
+
 
     width: 96px;
     height: 10px;
 
     transition: all .3s ease-in-out;
 
-    border-bottom: 3px solid #000;
+    border-bottom: 3px solid #fff;
 }
 
 .menu_list a {
@@ -214,6 +220,7 @@ select {
     justify-self: start;
     grid-area: logo; 
 
+    padding-left: 100px;
 }
 
 
@@ -288,7 +295,7 @@ select {
     height: 100px;
 
     position: absolute;
-    right: 1230px;
+    right: 1160px;
     top: 27px;
 
     border-bottom: solid #FFF500;
@@ -333,8 +340,9 @@ select {
     align-items: center;
 
 
-    margin-right: 270px;
+    margin-right: 80px;
 
+    z-index: 3;
 }
 /* Text on 1-st block */
 .main_titles {
@@ -354,7 +362,7 @@ select {
 
     position: absolute;
     top: 540px;
-    left: 592px;
+    left: 665px;
 
     background: #fff;
 
@@ -369,7 +377,7 @@ select {
 
     position: absolute;
     top: 540px;
-    left: 1383px;
+    left: 1453px;
 
     background: #fff;
 
@@ -421,7 +429,7 @@ select {
 
 
 
-    background: #000;
+    background: #fff;
 
     transform: rotate(-45deg);
 
@@ -444,7 +452,7 @@ select {
 
 
 
-    background: #000;
+    background: #fff;
 
     transform: rotate(-45deg);
 
@@ -455,7 +463,7 @@ select {
 
 
 
-    background: #000;
+    background: #fff;
 
     transform: rotate(-45deg);
 
@@ -466,7 +474,7 @@ select {
 
 
 
-    background: #000;
+    background: #fff;
 
     transform: rotate(-45deg);
 
