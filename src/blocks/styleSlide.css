@@ -1,0 +1,16 @@
+.head1 h1 {
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: 1;
+    color:white;
+    margin-top: 0px;
+    margin-left: 0px;
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 150px;
+    letter-spacing: 0.215em;
+}
+
+
