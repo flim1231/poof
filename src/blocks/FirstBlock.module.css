@@ -92,7 +92,6 @@ select {
     position: relative;
 
     background:  url('./../imgs/firstblock/background.svg') no-repeat center /cover, rgba(0,0,0,30%);
-    background-blend-mode: multiply;
     background-size: cover;
 
     z-index: 3;
