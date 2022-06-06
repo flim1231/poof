@@ -1,0 +1,526 @@
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+.wrapper a {
+    text-decoration: none;
+}
+
+
+
+/* ////////////////////////////////////////////////////// */
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500&display=swap');
+
+.wrapper {
+    min-width: 1950px;
+    height: 2206px;
+}
+
+
+
+/* Tour form */
+
+
+
+/* Iceland info */
+
+.iceland_info {
+
+    max-width: 1410px;
+    min-height: 1172px;
+
+    margin: 0 auto;
+
+    padding-top: 178px;
+}
+
+.iceland_title_title {
+
+    display: flex;
+    align-items: center;
+
+    padding-bottom: 51px;
+
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 47px;
+
+}
+
+.iceland_title {
+
+    display: flex;
+    justify-content: start;
+    text-align: left;
+
+    padding-bottom: 52px;
+
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 53px;
+}
+
+
+
+.iceland_subtitle {
+
+    text-align: left;
+
+    padding-bottom: 65px;
+
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 35px;
+
+    color: #7A7A7A;
+}
+
+.iceland_button {
+
+    width: 183px;
+    height: 62px;
+
+    display: flex;
+    align-items: center;
+
+    background: #203812;
+
+}
+
+.iceland_button_text {
+
+    width: 183px;
+    height: 62px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 39px;
+
+
+
+    color: #fff;
+}
+.iceland_button_text:hover{
+    color: #fff;
+}
+
+/* Iceland mountains */
+
+.iceland_mountains {
+
+    display: flex;
+    justify-content: end;
+
+    position: relative;
+    top: -647px;
+
+}
+
+.mountains_img {
+
+
+
+    width: 449px;
+    height: 758px;
+
+    background-image: url('./../imgs/secondblock/Mountains.svg');
+}
+
+/* Iceland waterfall */
+
+.iceland_waterfall {
+
+    display: flex;
+    justify-content: center;
+
+    position: relative;
+    top: -669px;
+    left: -135px;
+
+}
+
+.waterfall_img {
+
+    width: 480px;
+    height: 256px;
+
+    background-image: url('./../imgs/secondblock/waterfall.svg');
+
+}
+
+/* Choose a tour */
+
+.choose_tour_text {
+
+
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 53px;
+
+    color: #245760;
+
+    margin-right: 50px;
+}
+
+/* Filters */
+
+
+
+.filter1 {
+
+    width: 173px;
+    height: 39px;
+    
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 39px;
+
+    color: #7A7A7A;
+
+
+    margin-right: 58px;
+
+    border-bottom: 3px solid #7A7A7A
+}
+
+/* Filter1 cancel */
+
+.filter1_cancel {
+
+    display: inline-block;
+
+    position: relative;
+    right: 57px;
+    top: 4px;
+
+    width: 12px;
+    height: 12px;
+
+    }
+
+
+
+.filter1_cancel::before, .filter1_cancel::after {
+    
+    position: absolute;
+
+
+    content: ' ';
+
+    width: 15px;
+    height: 2px;
+    background-color: #912524;
+}
+
+.filter1_cancel::before {
+    transform: rotate(45deg);
+}
+
+.filter1_cancel::after {
+    transform: rotate(-45deg);
+}
+
+
+
+.filter2 {
+
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 39px;
+
+    color: #7A7A7A;
+
+    margin-right: 64px;
+
+    border-bottom: 3px solid #7A7A7A
+}
+
+/* Filter2 cancel */
+
+.filter2_cancel {
+
+    display: inline-block;
+
+    position: relative;
+    right: 65px;
+    top: 4px;
+
+    width: 12px;
+    height: 12px;
+
+    }
+
+
+
+.filter2_cancel::before, .filter2_cancel::after {
+    
+    position: absolute;
+
+
+    content: ' ';
+
+    width: 15px;
+    height: 2px;
+    background-color: #912524;
+}
+
+.filter2_cancel::before {
+    transform: rotate(45deg);
+}
+
+.filter2_cancel::after {
+    transform: rotate(-45deg);
+}
+
+
+
+.filter3 {
+
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 39px;
+
+    color: #7A7A7A;
+
+    border-bottom: 3px solid #7A7A7A
+}   
+
+/* Filter3 cancel */
+
+.filter3_cancel {
+
+    display: inline-block;
+
+    position: relative;
+    right: 0px;
+    top: 4px;
+
+    width: 12px;
+    height: 12px;
+
+    }
+
+
+
+.filter3_cancel::before, .filter3_cancel::after {
+    
+    position: absolute;
+
+
+    content: ' ';
+
+    width: 15px;
+    height: 2px;
+    background-color: #912524;
+}
+
+.filter3_cancel::before {
+    transform: rotate(45deg);
+}
+
+.filter3_cancel::after {
+    transform: rotate(-45deg);
+}
+
+/* Choose a tour burger */
+
+.choose_burger {
+
+    display: block;
+    
+    position: relative;
+    top: -30px;
+    right: -1993px;
+
+    width: 31px;
+    height: 22px
+
+}
+
+.choose_burger::before,
+.choose_burger::after {
+
+    content: '';
+
+    background-color: #245760;
+
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    left: 0;
+
+}
+
+.choose_burger span {
+
+    position: absolute;
+    top: 9px;
+
+    background-color: #245760;
+
+    left: 0;
+
+    width: 100%;
+    height: 3px;
+
+}
+
+.choose_burger::before {
+    top: 0;
+}
+
+.choose_burger::after {
+    bottom: 0;
+}
+
+
+/* Cards */
+
+.firstcard,
+.secondcard,
+.thirdcard,
+.fourthcard {
+
+    width: 330px;
+    height: 440px;
+
+}
+
+.firstcard_img,
+.secondcard_img,
+.thirdcard_img,
+.fourthcard_img {
+
+    width: 330px;
+    height: 181px;
+
+}
+
+.firstcard {
+
+
+
+}
+
+.firstcard_img {
+
+
+
+    background-image: url('./../imgs/secondblock/cruise.svg');
+    background-size: 330px 181px;
+    
+}
+
+.secondcard {
+
+}
+
+.secondcard_img {
+
+}
+
+.thirdcard {
+
+}
+
+.thirdcard_img {
+
+}
+
+.fourthcard {
+
+}
+
+.fourthcard_img {
+
+}
+
+
+
+

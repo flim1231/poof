@@ -1,16 +1,382 @@
-.head1 h1 {
-    position: absolute;
-    top:0;
-    left: 0;
-    z-index: 1;
-    color:white;
-    margin-top: 0px;
-    margin-left: 0px;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* ///////////////////////////////////////////////////// */
+
+/* Шрифты */
+
+@font-face {
+    font-family: 'Marianna';
+    src: url('./../fonts/Marianna.eot');
+    src: url('./../fonts/Marianna.eot?#iefix') format('embedded-opentype'),
+        url('./../fonts/Marianna.woff2') format('woff2'),
+        url('./../fonts/Marianna.woff') format('woff'),
+        url('./../fonts/Marianna.ttf') format('truetype'),
+        url('./../fonts/Marianna.svg#Marianna') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500&display=swap');
+
+/* ///////////////////////////////////////////////////// */
+
+.head1 {
+}
+
+
+
+.slider_title {
+
+    display: flex;
+    align-items: end;
+    justify-content: center;
+
     font-family: 'Oswald';
     font-style: normal;
     font-weight: 300;
     font-size: 150px;
+    line-height: 222px;
     letter-spacing: 0.215em;
+} 
+.slider_subtitle {
+
+    height: 500px;
+
+    display: flex;
+    justify-content: center;
+    align-items: start;
+
+    font-family: 'Marianna';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 96px;
+    line-height: 121px;
 }
+.slider_title::before {
+
+    content: '';
+
+    width: 150px;
+    height: 2px;
+
+    position: absolute;
+    top: 142px;
+    left: 256px;
+
+    background: #fff;
+
+    border: 2px solid #FFFFFF;
+}
+.slider_title::after {
+
+    content: '';
+
+    width: 150px;
+    height: 2px;
+
+    position: absolute;
+    top: 142px;
+    left: 1044px;
+
+    background: #fff;
+
+    border: 2px solid #FFFFFF;
+
+}
+
+/* Header menu */
+
+.header_menu {
+
+    position: absolute;
+    top: 92px;
+    left: 255px;
+
+    z-index: 50;
+}
+
+.menu_body {
+
+}
+
+.menu_list {
+
+}
+
+.list_item1,
+.list_item2,
+.list_item3 {
+
+    display: inline-grid;
+
+
+    padding-right: 80px;
+
+    list-style-type: none;
+
+
+
+    font-family: 'Oswald';
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 47px;
+}
+
+.header_menu a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.header_menu a:hover {
+    color: #fff;
+}
+
+/* Menu underlines */
+
+.list_item1::after,.list_item2::after {
+    content: '';
+
+
+
+    width: 0;
+
+    
+    border-bottom: 3px solid #fff;
+
+    transition: all .3s ease-in-out;
+
+}
+.list_item1:hover::after,.list_item2:hover::after {
+    content: '';
+
+    position: absolute;
+    top: 40px;
+
+
+
+    width: 64px;
+    height: 10px;
+
+
+    border-bottom: 3px solid #fff;
+
+    transition: all .3s ease-in-out;
+
+    
+}
+
+
+.list_item3::before {
+    content: '';
+
+    position: absolute;
+    top: 40px;
+
+
+
+    width: 0px;
+    height: 10px;
+
+    transition: all .3s ease-in-out;
+
+    border-bottom: 3px solid #fff;
+}
+.list_item3:hover::before {
+    content: '';
+
+    position: absolute;
+    top: 40px;
+
+
+
+    width: 96px;
+    height: 10px;
+
+    transition: all .3s ease-in-out;
+
+    border-bottom: 3px solid #fff;
+}
+
+/* ////////////////////////////////////// */
+
+/* Header logo */
+
+.header_logo {
+
+    position: absolute;
+    top: 88px;
+    left: 930px;
+}
+
+.logo_text {
+
+    text-transform: uppercase;
+
+    color: #fff;
+
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 53px;
+}
+
+.logo_text::before {
+    content: '';
+    
+    width: 0px;
+    height: 100px;
+
+    position: absolute;
+    top: -43px;
+
+    border-bottom: solid #FFF500;
+
+    transition: all .3s ease-in-out;
+
+}
+.logo_text:hover::before {
+
+
+    content: '';
+    
+    width: 200px;
+    height: 100px;
+
+    position: absolute;
+    top: -43px;
+
+    border-bottom: solid #FFF500;
+
+    transition: all .3s ease-in-out;
+
+}
+
+.logo_text::after {
+    content: '';
+    
+    width: 0px;
+    height: 100px;
+
+    position: absolute;
+    left: 0px;
+    top: -43px;
+
+    border-bottom: solid #FFF500;
+
+    filter: blur(6px);
+
+    transition: all .3s ease-in-out;
+
+}
+.logo_text:hover::after {
+
+
+    content: '';
+    
+    width: 200px;
+    height: 100px;
+
+    position: absolute;
+    left: 0px;
+    top: -43px;
+
+    border-bottom: solid #FFF500;
+
+    filter: blur(6px);
+
+    transition: all .3s ease-in-out;
+
+} 
+
+/* Header number */
+
+.header_number {
+
+    position: absolute;
+    top: 88px;
+    right: 255px;
+
+}
+
+.number_text {
+
+    color: #fff;
+
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 47px;
+}
+
 
 
