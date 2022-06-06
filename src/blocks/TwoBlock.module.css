@@ -239,7 +239,7 @@ select {
 
     color: #245760;
 
-    padding-right: 50px;
+    margin-right: 50px;
 }
 
 /* Filters */
@@ -265,28 +265,44 @@ select {
     border-bottom: 3px solid #7A7A7A
 }
 
+/* Filter1 cancel */
+
 .filter1_cancel {
 
     display: inline-block;
 
+    position: relative;
+    right: 57px;
+    top: 4px;
+
     width: 12px;
+    height: 12px;
+
+    }
 
 
+
+.filter1_cancel::before, .filter1_cancel::after {
+    
+    position: absolute;
+
+
+    content: ' ';
+
+    width: 15px;
+    height: 2px;
+    background-color: #912524;
 }
 
 .filter1_cancel::before {
-
-    content: '';
-
-    width:12px;
-
-    display: inline-block;
-
-    border: 2px solid #912524;
-
-    transform: rotate(90deg);
-
+    transform: rotate(45deg);
 }
+
+.filter1_cancel::after {
+    transform: rotate(-45deg);
+}
+
+
 
 .filter2 {
 
@@ -303,14 +319,44 @@ select {
     border-bottom: 3px solid #7A7A7A
 }
 
+/* Filter2 cancel */
+
 .filter2_cancel {
 
     display: inline-block;
 
+    position: relative;
+    right: 65px;
+    top: 4px;
+
     width: 12px;
     height: 12px;
 
+    }
+
+
+
+.filter2_cancel::before, .filter2_cancel::after {
+    
+    position: absolute;
+
+
+    content: ' ';
+
+    width: 15px;
+    height: 2px;
+    background-color: #912524;
 }
+
+.filter2_cancel::before {
+    transform: rotate(45deg);
+}
+
+.filter2_cancel::after {
+    transform: rotate(-45deg);
+}
+
+
 
 .filter3 {
 
@@ -325,12 +371,156 @@ select {
     border-bottom: 3px solid #7A7A7A
 }   
 
-.filter3.cancel {
+/* Filter3 cancel */
+
+.filter3_cancel {
 
     display: inline-block;
+
+    position: relative;
+    right: 0px;
+    top: 4px;
 
     width: 12px;
     height: 12px;
 
+    }
+
+
+
+.filter3_cancel::before, .filter3_cancel::after {
+    
+    position: absolute;
+
+
+    content: ' ';
+
+    width: 15px;
+    height: 2px;
+    background-color: #912524;
 }
+
+.filter3_cancel::before {
+    transform: rotate(45deg);
+}
+
+.filter3_cancel::after {
+    transform: rotate(-45deg);
+}
+
+/* Choose a tour burger */
+
+.choose_burger {
+
+    display: block;
+    
+    position: relative;
+    top: -30px;
+    right: -1993px;
+
+    width: 31px;
+    height: 22px
+
+}
+
+.choose_burger::before,
+.choose_burger::after {
+
+    content: '';
+
+    background-color: #245760;
+
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    left: 0;
+
+}
+
+.choose_burger span {
+
+    position: absolute;
+    top: 9px;
+
+    background-color: #245760;
+
+    left: 0;
+
+    width: 100%;
+    height: 3px;
+
+}
+
+.choose_burger::before {
+    top: 0;
+}
+
+.choose_burger::after {
+    bottom: 0;
+}
+
+
+/* Cards */
+
+.firstcard,
+.secondcard,
+.thirdcard,
+.fourthcard {
+
+    width: 330px;
+    height: 440px;
+
+}
+
+.firstcard_img,
+.secondcard_img,
+.thirdcard_img,
+.fourthcard_img {
+
+    width: 330px;
+    height: 181px;
+
+}
+
+.firstcard {
+
+
+
+}
+
+.firstcard_img {
+
+
+
+    background-image: url('./../imgs/secondblock/cruise.svg');
+    background-size: 330px 181px;
+    
+}
+
+.secondcard {
+
+}
+
+.secondcard_img {
+
+}
+
+.thirdcard {
+
+}
+
+.thirdcard_img {
+
+}
+
+.fourthcard {
+
+}
+
+.fourthcard_img {
+
+}
+
+
+
 
