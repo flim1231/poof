@@ -19,7 +19,7 @@ class CustomSlider extends Component {
             <div className='head1'>
 
                 <Carousel nextIcon={false} prevIcon={false}>
-                <Carousel.Item interval={4000}>
+                <Carousel.Item interval={2000}>
                     <img
                         className="d-block w-100"
                         src={slide1}
@@ -27,7 +27,7 @@ class CustomSlider extends Component {
                     />
                 </Carousel.Item>
 
-                <Carousel.Item interval={4000}>
+                <Carousel.Item interval={2000}>
                     <img
                         className="d-block w-100"
                         src={slide2}
@@ -39,37 +39,37 @@ class CustomSlider extends Component {
                     </Carousel.Caption>
                 </Carousel.Item>
 
-                <Carousel.Item interval={4000}>
+                <Carousel.Item interval={2000}>
                     <img
                         className="d-block w-100"
                         src={slide3}
                         alt="Third slide"
                     />
-                    <Carousel.Caption interval={4000}>
+                    <Carousel.Caption >
                         <h3>Third slide label</h3>
                         <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
                     </Carousel.Caption>
                 </Carousel.Item>
 
-                <Carousel.Item interval={4000}>
+                <Carousel.Item interval={2000}>
                     <img
                         className="d-block w-100"
                         src={slide4}
                         alt="Third slide"
                     />
-                    <Carousel.Caption interval={4000}>
+                    <Carousel.Caption >
                         <h3>Third slide label</h3>
                         <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
                     </Carousel.Caption>
                 </Carousel.Item>
 
-                <Carousel.Item interval={4000}>
+                <Carousel.Item interval={2000}>
                     <img
                         className="d-block w-100"
                         src={slide5}
                         alt="Third slide"
                     />
-                    <Carousel.Caption interval={4000}>
+                    <Carousel.Caption >
                         <h3>Third slide label</h3>
                         <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
                     </Carousel.Caption>

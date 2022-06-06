@@ -1,7 +1,7 @@
 import React from 'react';
 import cl from './TwoBlock.module.css'
 
-function FirstBlock() {
+function TwoBlock() {
     return ( 
         <div>
             
@@ -9,4 +9,4 @@ function FirstBlock() {
      );
 }
 
-export default FirstBlock;
+export default TwoBlock;
