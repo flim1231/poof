@@ -189,8 +189,9 @@ select {
     display: flex;
     justify-content: end;
 
-    position: relative;
-    top: -647px;
+    position: absolute;
+    top: 1259px;
+    left: 1231px;
 
 }
 
@@ -211,9 +212,9 @@ select {
     display: flex;
     justify-content: center;
 
-    position: relative;
-    top: -669px;
-    left: -135px;
+    position: absolute;
+    top: 1996px;
+    left: 600px;
 
 }
 
