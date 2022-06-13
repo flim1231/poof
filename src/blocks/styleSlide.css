@@ -129,7 +129,7 @@ select {
 
     position: absolute;
     top: 142px;
-    left: 256px;
+    left: 182px;
 
     background: #fff;
 
@@ -144,7 +144,7 @@ select {
 
     position: absolute;
     top: 142px;
-    left: 1044px;
+    left: 970px;
 
     background: #fff;
 
@@ -157,7 +157,7 @@ select {
 .header_menu {
 
     position: absolute;
-    top: 92px;
+    top: 80px;
     left: 255px;
 
     z-index: 50;
@@ -272,8 +272,8 @@ select {
 .header_logo {
 
     position: absolute;
-    top: 88px;
-    left: 930px;
+    top: 76px;
+    left: 830px;
 }
 
 .logo_text {
@@ -362,7 +362,7 @@ select {
 .header_number {
 
     position: absolute;
-    top: 88px;
+    top: 80px;
     right: 255px;
 
 }

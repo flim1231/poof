@@ -19,6 +19,7 @@ class CustomSlider extends Component {
             <div className='head1'>
                 
                 <Carousel nextIcon={false} prevIcon={false}>
+<<<<<<< HEAD
                 <Carousel.Item interval={2000}>
                     <img
                         className="d-block w-100"
@@ -79,6 +80,68 @@ class CustomSlider extends Component {
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>
+=======
+                    <Carousel.Item interval={2000}>
+                        <img
+                            className="d-block w-100"
+                            src={img1shadow}
+                            alt="First slide"
+                        />
+                        <Carousel.Caption>
+                            <h3 className="slider_title">Iceland</h3>
+                            <p className="slider_subtitle">Experience the splendor of nature</p>
+                        </Carousel.Caption>
+                    </Carousel.Item>
+
+                    <Carousel.Item interval={2000}>
+                        <img
+                            className="d-block w-100"
+                            src={img2shadow}
+                            alt="Second slide"
+                        />
+                        <Carousel.Caption>
+                            <h3 className="slider_title">Iceland</h3>
+                            <p className="slider_subtitle">Experience the splendor of nature</p>
+                        </Carousel.Caption>
+                    </Carousel.Item>
+
+                    <Carousel.Item interval={2000}>
+                        <img
+                            className="d-block w-100"
+                            src={img3shadow}
+                            alt="Third slide"
+                        />
+                        <Carousel.Caption >
+                            <h3 className="slider_title">Iceland</h3>
+                            <p className="slider_subtitle">Experience the splendor of nature</p>
+                        </Carousel.Caption>
+                    </Carousel.Item>
+
+                    <Carousel.Item interval={2000}>
+                        <img
+                            className="d-block w-100"
+                            src={img4shadow}
+                            alt="fourth slide"
+                        />
+                        <Carousel.Caption >
+                            <h3 className="slider_title">Iceland</h3>
+                            <p className="slider_subtitle">Experience the splendor of nature</p>
+                        </Carousel.Caption>
+                    </Carousel.Item>
+
+                    <Carousel.Item interval={2000}>
+                        <img
+                            className="d-block w-100"
+                            src={img5shadow}
+                            alt="fifth slide"
+                        />
+                        <Carousel.Caption >
+                            <h3 className="slider_title">Iceland</h3>
+                            <p className="slider_subtitle">Experience the splendor of nature</p>
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                </Carousel>
+>>>>>>> 0e3af05e7ff7a612fe0a386595b87ff36c955ffd
                 {/* Header menu */}
                 <div className="header_menu">
                         <nav className="menu_body">
