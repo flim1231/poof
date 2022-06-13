@@ -524,3 +524,13 @@ select {
 
 
 
+
+
+.hok {
+    float: left;
+}
+
+
+.carousel-indicators [data-bs-target] {
+    border-bottom: 20px;
+}

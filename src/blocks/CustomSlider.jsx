@@ -30,13 +30,8 @@ class CustomSlider extends Component {
                         <p className="slider_subtitle">Experience the splendor of nature</p>
                     </Carousel.Caption>
                 </Carousel.Item>
-<<<<<<< HEAD
 
                 <Carousel.Item interval={2000}>
-=======
-                
-                <Carousel.Item interval={4000}>
->>>>>>> 53979f544041f4e5d241f5907c74853ba822858d
                     <img
                         className="d-block w-100"
                         src={img2shadow}
@@ -54,15 +49,9 @@ class CustomSlider extends Component {
                         src={img3shadow}
                         alt="Third slide"
                     />
-<<<<<<< HEAD
                     <Carousel.Caption >
                         <h3>Third slide label</h3>
                         <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-=======
-                    <Carousel.Caption interval={4000}>
-                        <h3 className="slider_title">Iceland</h3>
-                        <p className="slider_subtitle">Experience the splendor of nature</p>
->>>>>>> 53979f544041f4e5d241f5907c74853ba822858d
                     </Carousel.Caption>
                 </Carousel.Item>
 
@@ -72,15 +61,9 @@ class CustomSlider extends Component {
                         src={img4shadow}
                         alt="fourth slide"
                     />
-<<<<<<< HEAD
                     <Carousel.Caption >
                         <h3>Third slide label</h3>
                         <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-=======
-                    <Carousel.Caption interval={4000}>
-                        <h3 className="slider_title">Iceland</h3>
-                        <p className="slider_subtitle">Experience the splendor of nature</p>
->>>>>>> 53979f544041f4e5d241f5907c74853ba822858d
                     </Carousel.Caption>
                 </Carousel.Item>
 
@@ -90,15 +73,9 @@ class CustomSlider extends Component {
                         src={img5shadow}
                         alt="fifth slide"
                     />
-<<<<<<< HEAD
                     <Carousel.Caption >
                         <h3>Third slide label</h3>
                         <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-=======
-                    <Carousel.Caption interval={4000}>
-                        <h3 className="slider_title">Iceland</h3>
-                        <p className="slider_subtitle">Experience the splendor of nature</p>
->>>>>>> 53979f544041f4e5d241f5907c74853ba822858d
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>
