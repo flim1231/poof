@@ -84,10 +84,6 @@ select {
 
 
 
-/* Tour form */
-
-
-
 /* Iceland info */
 
 .iceland_info {
@@ -149,13 +145,7 @@ select {
 
 .iceland_button {
 
-    width: 183px;
-    height: 62px;
-
     display: flex;
-    align-items: center;
-
-    background: #203812;
 
 }
 
@@ -174,12 +164,17 @@ select {
     font-size: 26px;
     line-height: 39px;
 
+    background: #fff;
 
-
-    color: #fff;
 }
 .iceland_button_text:hover{
+
+    transition: all 0.3s 0s;
+
+    background: #203812;
+
     color: #fff;
+
 }
 
 /* Iceland mountains */
@@ -187,16 +182,16 @@ select {
 .iceland_mountains {
 
     display: flex;
-    justify-content: end;
 
-    position: absolute;
-    top: 1259px;
-    left: 1231px;
+    position: relative;
+    top: -647px;
+    left: 963px;
+
+    margin-bottom: -647px;
 
 }
 
 .mountains_img {
-
 
 
     width: 449px;
@@ -210,11 +205,10 @@ select {
 .iceland_waterfall {
 
     display: flex;
-    justify-content: center;
 
-    position: absolute;
-    top: 1996px;
-    left: 600px;
+    position: relative;
+    top: -20px;
+    left: 333px;
 
 }
 
@@ -229,8 +223,21 @@ select {
 
 /* Choose a tour */
 
+.choose_tour {
+
+    width: 1410px;
+
+    margin-top: 180px;
+    margin-left: auto;
+    margin-right: auto;
+
+
+
+}
+
 .choose_tour_text {
 
+    display: flex;
 
     font-family: 'Oswald';
     font-style: normal;
@@ -240,184 +247,22 @@ select {
 
     color: #245760;
 
-    margin-right: 50px;
-}
+    margin-bottom: 33px;
 
-/* Filters */
-
-
-
-.filter1 {
-
-    width: 173px;
-    height: 39px;
-    
-    font-family: 'Oswald';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 26px;
-    line-height: 39px;
-
-    color: #7A7A7A;
-
-
-    margin-right: 58px;
-
-    border-bottom: 3px solid #7A7A7A
-}
-
-/* Filter1 cancel */
-
-.filter1_cancel {
-
-    display: inline-block;
-
-    position: relative;
-    right: 57px;
-    top: 4px;
-
-    width: 12px;
-    height: 12px;
-
-    }
-
-
-
-.filter1_cancel::before, .filter1_cancel::after {
-    
-    position: absolute;
-
-
-    content: ' ';
-
-    width: 15px;
-    height: 2px;
-    background-color: #912524;
-}
-
-.filter1_cancel::before {
-    transform: rotate(45deg);
-}
-
-.filter1_cancel::after {
-    transform: rotate(-45deg);
 }
 
 
-
-.filter2 {
-
-    font-family: 'Oswald';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 26px;
-    line-height: 39px;
-
-    color: #7A7A7A;
-
-    margin-right: 64px;
-
-    border-bottom: 3px solid #7A7A7A
-}
-
-/* Filter2 cancel */
-
-.filter2_cancel {
-
-    display: inline-block;
-
-    position: relative;
-    right: 65px;
-    top: 4px;
-
-    width: 12px;
-    height: 12px;
-
-    }
-
-
-
-.filter2_cancel::before, .filter2_cancel::after {
-    
-    position: absolute;
-
-
-    content: ' ';
-
-    width: 15px;
-    height: 2px;
-    background-color: #912524;
-}
-
-.filter2_cancel::before {
-    transform: rotate(45deg);
-}
-
-.filter2_cancel::after {
-    transform: rotate(-45deg);
-}
-
-
-
-.filter3 {
-
-    font-family: 'Oswald';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 26px;
-    line-height: 39px;
-
-    color: #7A7A7A;
-
-    border-bottom: 3px solid #7A7A7A
-}   
-
-/* Filter3 cancel */
-
-.filter3_cancel {
-
-    display: inline-block;
-
-    position: relative;
-    right: 0px;
-    top: 4px;
-
-    width: 12px;
-    height: 12px;
-
-    }
-
-
-
-.filter3_cancel::before, .filter3_cancel::after {
-    
-    position: absolute;
-
-
-    content: ' ';
-
-    width: 15px;
-    height: 2px;
-    background-color: #912524;
-}
-
-.filter3_cancel::before {
-    transform: rotate(45deg);
-}
-
-.filter3_cancel::after {
-    transform: rotate(-45deg);
-}
 
 /* Choose a tour burger */
 
 .choose_burger {
 
-    display: block;
+    display: flex;
+
     
     position: relative;
-    top: -30px;
-    right: -1993px;
+    top: -60px;
+    right: -1440px;
 
     width: 31px;
     height: 22px
@@ -463,6 +308,12 @@ select {
 
 /* Cards */
 
+.cards {
+
+    display: flex;
+
+}
+
 .firstcard,
 .secondcard,
 .thirdcard,
@@ -483,49 +334,1006 @@ select {
 
 }
 
+/* First card */
+
 .firstcard {
 
+    max-width: 330px;
+    max-height: 440px;
 
+    box-shadow: 0px 4px 25px -11px rgba(0, 0, 0, 0.25);
 
 }
 
 .firstcard_img {
 
+    display: block;
+
 
 
     background-image: url('./../imgs/secondblock/cruise.svg');
-    background-size: 330px 181px;
+
     
 }
 
+.firstcard_img_body {
+
+    width: 330px;
+    height: 181px;
+
+}
+
+.firstcard_img_compassblock {
+
+    display: flex;
+
+
+    position: relative;
+    top: -31px;
+
+    width: 66px;
+    height: 31px;
+
+    background: #348BB5;
+
+}
+.firstcard_compassimg {
+
+    width: 16px;
+    height: 16.66px;
+
+    background-image: url('./../imgs/secondblock/compass.svg');
+    background-size: cover;
+
+    margin-left: 4px;
+    margin-right: 4px;
+    margin-top: 7px;
+}
+.firstcard_compasstext {
+
+    margin-top: 6px;
+
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 15px;
+    line-height: 22px;
+
+    color: #fff;
+}
+
+.firstcard_img_daystext {
+
+    position: relative;
+    top: -56px;
+    left: 138px;
+
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 15.08px;
+    line-height: 22px;
+
+    color: #fff;
+}
+
+.firstcard_text_body {
+
+
+
+    margin-left: 18px;
+}
+
+.firstcard_title {
+
+    margin-top: 9px;
+
+    display: flex;
+
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.firstcard_price {
+
+    display: flex;
+
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+
+    color: #7A7A7A;
+}
+
+.firstcard_price_weight {
+    padding-left: 6px;
+
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+
+    color: #000;
+}
+
+.firstcard_stars {
+ 
+    width: 71px;
+    height: 15px;
+    
+    display: flex;
+    align-items: center;
+
+
+    list-style-type: none;
+
+}
+
+.firstcard_stars_item {
+
+    display: flex;
+
+    width: 10px;
+    height: 10px;
+    
+    margin-top: 9px;
+
+    background-image: url('./../imgs/secondblock/star.svg');
+
+}
+
+.firstcard_stars_rate {
+
+    margin-top: 10px;
+    margin-left: 4px;
+
+    display: flex;
+
+
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 15px;
+}
+
+.firstcard_subtitle {
+
+    text-align: left;
+
+    margin-top: 9px;
+
+    display: flex;
+
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 15px;
+
+    color: #7A7A7A;
+
+}
+
+.firstcard_button {
+
+    width: 80px;
+    height: 31px;
+
+    display: flex;
+    justify-content: center;
+
+    margin-top: 10px;
+
+    border: 2px solid #348BB5;
+
+}
+
+.firstcard_button_text {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+
+    color: #000;
+
+}
+
+.firstcard_button:hover {
+
+    transition: all .3s 0s;
+
+    background: #348BB5;
+}
+
+.firstcard_button_text:hover {
+
+    transition: all .3s 0s;
+
+    color: #fff;
+
+}
+
+/* Second card */
+
 .secondcard {
+
+
+
+    margin-left: 30px;
+
+    box-shadow: 0px 4px 25px -11px rgba(0, 0, 0, 0.25);
+    
+}
+
+.secondcard_img_body {
+
+    width: 330px;
+    height: 181px;
 
 }
 
 .secondcard_img {
 
+    display: block;
+
+    background-image: url('./../imgs/secondblock/Individual.svg');
+
 }
 
+.secondcard_img_compassblock {
+
+    display: flex;
+
+
+    position: relative;
+    top: -31px;
+
+    width: 81px;
+    height: 31px;
+
+    background: #912524;
+}
+
+.secondcard_compassimg {
+
+    width: 16px;
+    height: 16.66px;
+
+    background-image: url('./../imgs/secondblock/compass.svg');
+    background-size: cover;
+
+    margin-left: 4px;
+    margin-right: 4px;
+    margin-top: 6px;
+}
+
+.secondcard_compasstext {
+
+    display: flex;
+    align-items: center;
+
+    margin-top: 1px;
+
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 15px;
+    line-height: 22px;
+
+    color: #fff;
+}
+
+.secondcard_img_daystext {
+
+    position: relative;
+    top: -56px;
+    left: 134px;
+
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 15.08px;
+    line-height: 22px;
+
+    color: #fff;
+
+}
+
+.secondcard_text_body {
+
+
+
+    margin-left: 18px;
+}
+
+.secondcard_title {
+
+    margin-top: 9px;
+
+    display: flex;
+
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.secondcard_price {
+
+    display: flex;
+
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+
+    color: #7A7A7A;
+}
+
+.secondcard_price_weight {
+    padding-left: 6px;
+
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+
+    color: #000;
+}
+
+.secondcard_stars {
+ 
+    width: 71px;
+    height: 15px;
+    
+    display: flex;
+    align-items: center;
+
+    list-style-type: none;
+
+}
+
+.secondcard_stars_item {
+
+    display: flex;
+
+    width: 10px;
+    height: 10px;
+    
+    margin-top: 9px;
+
+    background-image: url('./../imgs/secondblock/star.svg');
+
+}
+
+.secondcard_stars_rate {
+
+    margin-top: 10px;
+    margin-left: 4px;
+
+    display: flex;
+
+
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 15px;
+}
+
+.secondcard_subtitle {
+
+    text-align: left;
+
+    margin-top: 9px;
+
+    display: flex;
+
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 15px;
+
+    color: #7A7A7A;
+
+}
+
+.secondcard_button {
+
+    width: 80px;
+    height: 31px;
+
+    display: flex;
+    justify-content: center;
+
+    margin-top: 10px;
+
+    border: 2px solid #912524;
+
+}
+
+.secondcard_button_text {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+
+    color: #000;
+
+}
+
+.secondcard_button:hover {
+
+    transition: all .3s 0s;
+
+    background: #912524;
+}
+
+.secondcard_button_text:hover {
+
+    transition: all .3s 0s;
+
+    color: #fff;
+
+}
+
+/* Third card */
+
 .thirdcard {
+
+    margin-left: 30px;
+
+    box-shadow: 0px 4px 25px -11px rgba(0, 0, 0, 0.25);
+
+}
+
+
+
+.thirdcard_img_body {
+
+    width: 330px;
+    height: 181px;
 
 }
 
 .thirdcard_img {
 
+    display: block;
+
+    background-image: url('./../imgs/secondblock/group.svg');
+
 }
 
+.thirdcard_img_compassblock {
+
+    display: flex;
+
+
+    position: relative;
+    top: -31px;
+
+    width: 61px;
+    height: 31px;
+
+    background: #24912F;
+}
+
+.thirdcard_compassimg {
+
+    width: 16px;
+    height: 16.66px;
+
+    background-image: url('./../imgs/secondblock/compass.svg');
+    background-size: cover;
+
+    margin-left: 4px;
+    margin-right: 4px;
+    margin-top: 6px;
+}
+
+.thirdcard_compasstext {
+
+    display: flex;
+    align-items: center;
+
+    margin-top: 1px;
+
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 15px;
+    line-height: 22px;
+
+    color: #fff;
+}
+
+.thirdcard_img_daystext {
+
+    position: relative;
+    top: -56px;
+    left: 134px;
+
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 15.08px;
+    line-height: 22px;
+
+    color: #fff;
+
+}
+
+.thirdcard_text_body {
+
+
+
+    margin-left: 18px;
+}
+
+.thirdcard_title {
+
+    margin-top: 9px;
+
+    display: flex;
+
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.thirdcard_price {
+
+    display: flex;
+
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+
+    color: #7A7A7A;
+}
+
+.thirdcard_price_weight {
+    padding-left: 6px;
+
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+
+    color: #000;
+}
+
+.thirdcard_stars {
+ 
+    width: 71px;
+    height: 15px;
+    
+    display: flex;
+    align-items: center;
+
+    list-style-type: none;
+
+}
+
+.thirdcard_stars_item {
+
+    display: flex;
+
+    width: 10px;
+    height: 10px;
+    
+    margin-top: 9px;
+
+    background-image: url('./../imgs/secondblock/star.svg');
+
+}
+
+.thirdcard_stars_rate {
+
+    margin-top: 10px;
+    margin-left: 4px;
+
+    display: flex;
+
+
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 15px;
+}
+
+.thirdcard_subtitle {
+
+    text-align: left;
+
+    margin-top: 9px;
+
+    display: flex;
+
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 15px;
+
+    color: #7A7A7A;
+
+}
+
+.thirdcard_button {
+
+    width: 80px;
+    height: 31px;
+
+    display: flex;
+    justify-content: center;
+
+    margin-top: 25px;
+
+    border: 2px solid #24912F;
+
+}
+
+.thirdcard_button_text {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+
+    color: #000;
+
+}
+
+.thirdcard_button:hover {
+
+    transition: all .3s 0s;
+
+    background: #24912F;
+}
+
+.thirdcard_button_text:hover {
+
+    transition: all .3s 0s;
+
+    color: #fff;
+
+}
+
+/* Fourth card */
+
 .fourthcard {
+
+    margin-left: 30px;
+
+    box-shadow: 0px 4px 25px -11px rgba(0, 0, 0, 0.25);
+
+}
+
+
+
+.fourthcard_img_body {
+
+    width: 330px;
+    height: 181px;
 
 }
 
 .fourthcard_img {
 
+    display: block;
+
+    background-image: url('./../imgs/secondblock/Autotour.svg');
+
 }
 
+.fourthcard_img_compassblock {
+
+    display: flex;
+
+
+    position: relative;
+    top: -31px;
+
+    width: 81px;
+    height: 31px;
+
+    background: #912524;
+}
+
+.fourthcard_compassimg {
+
+    width: 16px;
+    height: 16.66px;
+
+    background-image: url('./../imgs/secondblock/compass.svg');
+    background-size: cover;
+
+    margin-left: 4px;
+    margin-right: 4px;
+    margin-top: 6px;
+}
+
+.fourthcard_compasstext {
+
+    display: flex;
+    align-items: center;
+
+    margin-top: 1px;
+
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 15px;
+    line-height: 22px;
+
+    color: #fff;
+}
+
+.fourthcard_img_daystext {
+
+    position: relative;
+    top: -56px;
+    left: 134px;
+
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 15.08px;
+    line-height: 22px;
+
+    color: #fff;
+
+}
+
+.fourthcard_text_body {
 
 
 
+    margin-left: 18px;
+}
 
+.fourthcard_title {
+
+    margin-top: 9px;
+
+    display: flex;
+
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.fourthcard_price {
+
+    display: flex;
+
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+
+    color: #7A7A7A;
+}
+
+.fourthcard_price_weight {
+    padding-left: 6px;
+
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+
+    color: #000;
+}
+
+.fourthcard_stars {
+ 
+    width: 71px;
+    height: 15px;
+    
+    display: flex;
+    align-items: center;
+
+    list-style-type: none;
+
+}
+
+.fourthcard_stars_item {
+
+    display: flex;
+
+    width: 10px;
+    height: 10px;
+    
+    margin-top: 9px;
+
+    background-image: url('./../imgs/secondblock/star.svg');
+
+}
+
+.fourthcard_stars_rate {
+
+    margin-top: 10px;
+    margin-left: 4px;
+
+    display: flex;
+
+
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 15px;
+}
+
+.fourthcard_subtitle {
+
+    text-align: left;
+
+    margin-top: 9px;
+
+    display: flex;
+
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 15px;
+
+    color: #7A7A7A;
+
+}
+
+.fourthcard_button {
+
+    width: 80px;
+    height: 31px;
+
+    display: flex;
+    justify-content: center;
+
+    margin-top: 10px;
+
+    border: 2px solid #B5A834;
+
+}
+
+.fourthcard_button_text {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+
+    color: #000;
+
+}
+
+.fourthcard_button:hover {
+
+    transition: all .3s 0s;
+
+    background: #B5A834;
+}
+
+.fourthcard_button_text:hover {
+
+    transition: all .3s 0s;
+
+    color: #fff;
+
+}
+
+/* Slider */
+
+.tour_slider {
+
+    display: flex;
+    align-items: flex-end;
+
+
+    height: 123px;
+
+}
+
+.tour_slider_arrowprev {
+
+    display: flex;
+
+    width: 32px;
+    height: 64px;
+
+    background-image: url('./../imgs/secondblock/arrowprev.svg');
+}
+
+.tour_sliderarea_body {
+
+    width: 1414px;
+    height: 65px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.tour_sliderarea {
+
+
+    width: 1240px;
+    height: 12px;
+
+    background: #D9D9D9;
+    border-radius: 589px;
+}
+
+.tour_sliderarea_scroll {
+
+    width: 230px;
+    height: 14px;
+
+    position: relative;
+    right: -851px;
+    top: -2px;
+
+    background: #245760;
+    border-radius: 589px;
+
+}
+
+.tour_slider_arrownext {
+
+    width: 36px;
+    height: 64px;
+
+
+    background-image: url('./../imgs/secondblock/arrownext.svg');
+
+}
 
 .hok {
     float: left;

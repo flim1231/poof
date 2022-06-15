@@ -1,0 +1,2551 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+.wrapper a {
+    text-decoration: none;
+}
+
+
+
+/* ////////////////////////////////////////////////////// */
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500&display=swap');
+
+
+
+.wrapper {
+
+  min-width: 1950px;
+
+
+
+}
+
+/* Hotels */
+
+.hotels {
+
+  display: flex;
+  flex-direction: column;
+
+  max-width: 1410px;
+  height: 1087px;
+
+
+  margin: 0 auto;
+
+}
+
+.hotels_title {
+
+  margin-bottom: 49px;
+
+  display: flex;
+
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 47px;
+
+}
+
+.hotels_wherestay_info
+
+.hotels_img_house {
+
+  float: left;
+
+  display: flex;
+  flex-direction: column;
+
+  width: 570px;
+  height: 670px;
+
+  background-image: url('./../imgs/secondblock/hotels_house.svg');
+
+}
+
+.wherestay_title {
+
+
+  display: flex;
+
+  position: relative;
+  top: -17px;
+  left: 76px;
+
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 65px;
+
+  color: #406A92;
+
+}
+
+.wherestay_subtitle {
+
+  display: flex;
+
+  position: relative;
+  top: 35px;
+  left: 120px;
+
+  text-align: left;
+
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 33px;
+
+  color: #7A7A7A;
+}
+
+.wherestay_button {
+
+  display: flex;
+  justify-content: center;
+
+  position: relative;
+  top: 95px;
+  left: 120px;
+
+  width: 183px;
+  height: 62px;
+
+  background: #406A92;
+
+}
+
+.wherestay_button_text {
+
+  display: flex;
+  align-items: center;
+
+
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 39px;
+
+  color: #fff;
+
+}
+
+.wherestay_button:hover {
+  transition: all .3s 0s;
+
+  background: #fff;
+
+  border: 2px solid #406A92;
+}
+
+.wherestay_button_text:hover {
+  color: #000;
+}
+
+.hotels_img_water {
+
+  display: flex;
+  flex-direction: column;
+
+  position: relative;
+  left: 150px;
+  top: 304px;
+
+  width: 690px;
+  height: 361px;
+
+  background-image: url('./../imgs/secondblock/hotels_water.svg');
+
+}
+
+/* Popular places */
+
+.popularplaces {
+
+
+  align-items: center;
+
+  max-width: 1410px;
+
+
+  margin: 0 auto;
+
+  margin-top: 180px;
+
+}
+
+.popularplaces_text {
+
+  margin-bottom: 50px;
+  
+  display: flex;
+  align-items: center;
+}
+
+.popularplaces_title {
+
+  display: flex;
+
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 65px;
+
+  color: #406A92;
+}
+
+.popularplaces_firstplace {
+
+  display: flex;
+
+  width: 160px;
+  height: 40px;
+
+  margin-left: 110px;
+  margin-bottom: 2px;
+
+}
+
+.popularplaces_firstplace:active {
+
+  border-bottom: 3px solid #7A7A7A;
+
+}
+
+.popularplaces_firstplace_text {
+
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 39px;
+
+  color: #7A7A7A;
+}
+
+.popularplaces_firstplace_text:hover {
+  color: #7A7A7A;
+}
+
+.popularplaces_secondplace {
+
+  width: 160px;
+  height: 39px;
+
+  margin-left: 110px;
+  margin-bottom: 2px;
+
+}
+
+.popularplaces_secondplace_text {
+
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 39px;
+
+  color: #7A7A7A;
+}
+
+.popularplaces_secondplace:active {
+
+  border-bottom: 3px solid #7A7A7A;
+
+}
+
+.popularplaces_secondplace_text:hover {
+  color: #7A7A7A;
+}
+
+.popularplaces_allplaces {
+
+  width: 116px;
+  height: 39px;
+
+  margin-left: 110px;
+  margin-bottom: 2px;
+
+}
+
+.popularplaces_allplaces_text {
+
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 39px;
+
+  color: #7A7A7A;
+
+}
+
+.popularplaces_info {
+
+  display: flex;
+
+}
+
+.popularplaces_firstimg {
+
+  display: flex;
+
+  width: 570px;
+  height: 591px;
+
+  background-image: url('./../imgs/secondblock/places_firstimg.svg');
+
+}
+
+.popularplaces_placeinfo {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+  top: 55px;
+  left: -169px; 
+
+  width: 482px;
+  height: 482px;
+
+
+
+  background: #fff;
+
+}
+
+.popularplaces_placeinfo_title {
+
+  margin-bottom: 23px;
+
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 59px;
+
+}
+
+.popularplaces_placeinfo_subtitle {
+
+  text-align: left;
+
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px;
+
+  color: #7A7A7A;
+
+}
+
+.popularplaces_placeinfo_button {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 39px;
+
+  width: 183px;
+  height: 62px;
+
+  background: #406A92;
+
+}
+
+.popularplaces_placeinfo_button_text {
+
+
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 39px;
+
+  color: #FFFFFF;
+
+}
+
+.popularplaces_placeinfo_button_text:hover {
+
+  color: #fff;
+
+}
+
+.popularplaces_secondimg {
+
+  width: 507px;
+  height: 591px;
+
+  background-image: url('./../imgs/secondblock/places_secondimg.svg');
+
+}
+
+/* Slider */
+
+.popularplaces_slider {
+
+  display: flex;
+  align-items: flex-end;
+
+
+  height: 123px;
+
+}
+
+.popularplaces_slider_arrowprev {
+
+  display: flex;
+
+  width: 32px;
+  height: 64px;
+
+  background-image: url('./../imgs/secondblock/places_arrowprev.svg');
+}
+
+.popularplaces_sliderarea_body {
+
+  width: 1414px;
+  height: 65px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.popularplaces_sliderarea {
+
+
+  width: 1240px;
+  height: 12px;
+
+  background: #D9D9D9;
+  border-radius: 589px;
+}
+
+.popularplaces_sliderarea_scroll {
+
+  width: 230px;
+  height: 14px;
+
+  position: relative;
+  right: 0px;
+  top: -2px;
+
+  background: #245760;
+  border-radius: 589px;
+
+}
+
+.popularplaces_slider_arrownext {
+
+  width: 36px;
+  height: 64px;
+
+
+  background-image: url('./../imgs/secondblock/places_arrownext.svg');
+
+}
+
+/* Vehicle rental */
+
+.vehiclerental_info {
+
+  max-width: 1410px;
+
+
+
+  margin-top: 180px;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+
+
+.vehiclerental_title {
+
+  display: flex;
+
+  margin-bottom: 49px;
+
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 47px;
+
+}
+
+.vehiclerental_info_text_body {
+
+  display: flex;
+  flex-direction: column;
+
+
+}
+
+.vehiclerental_info_title {
+
+  display: flex;
+
+  margin-left: 120px;
+  margin-bottom: 45px;
+
+  text-align: left;
+
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 65px;
+
+  color: #C57B34;
+
+
+}
+
+.vehiclerental_info_subtitle {
+
+  display: flex;
+
+  margin-left: 120px;
+  margin-bottom: 65px;
+
+  text-align: left;
+
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 47px;
+
+}
+
+.vehiclerental_info_button {
+
+  width: 183px;
+  height: 62px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-left: 120px;
+
+  background: #C57B34;
+
+}
+
+.vehiclerental_info_button_text {
+
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 39px;
+
+  color: #FFFFFF;
+}
+
+.vehiclerental_info_button:hover {
+  transition: all .3s 0s;
+
+  background: #fff;
+
+  border: 2px solid #C57B34;
+}
+
+.vehiclerental_info_button_text:hover {
+  color: #C57B34;
+}
+
+.vehiclerental_info_img_body {
+
+}
+
+.vehiclerental_info_img {
+
+  display: block;
+
+  position: relative;
+  top: -490px;
+  left: 893px;
+  margin-bottom: -310px;
+
+  width: 517px;
+  height: 667px;
+
+  background-image: url('./../imgs/secondblock/vehicle.svg');
+
+}
+
+/* Recreation */
+
+.recreation {
+
+  max-width: 1410px;
+
+  margin: 0 auto;
+
+  margin-bottom: 180px;
+
+}
+
+.recreation_title {
+
+  display: flex;
+
+  margin-bottom: 40px;
+
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 47px;
+
+}
+
+.recreation_info_body {
+
+}
+
+.recreation_info_title {
+
+  display: flex;
+
+  margin-bottom: 70px;
+
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 65px;
+
+  color: #004F9A;
+
+}
+
+.recreation_info_subtitle {
+
+  text-align: left;
+
+  margin-bottom: 60px;
+
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 47px;
+
+  color: #0057A4;
+
+}
+
+.recreation_info_button {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 183px;
+  height: 62px;
+
+  background: #004F9A;
+
+}
+
+.recreation_info_button_text {
+  
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 39px;
+
+  color: #fff;
+}
+
+.recreation_info_button:hover {
+  transition: all .3s 0s;
+
+  background: #fff;
+
+  border: 2px solid #004F9A;
+}
+
+.recreation_info_button_text:hover {
+  color: #004F9A;
+}
+
+
+.recreation_firstimg {
+
+  position: relative;
+  top: -497px;
+  left: 840px;
+
+  margin-bottom: -497px;
+  margin-right: 840px;
+
+  width: 570px;
+  height: 652px;
+
+  background-image: url('./../imgs/secondblock/recreation_firstimg.svg');
+
+}
+
+.recreation_secondimg {
+
+  position: relative;
+  top: -41px;
+  left: 300px;
+
+  width: 451px;
+  height: 272px;
+
+  background-image: url('./../imgs/secondblock/recreation_secondimg.svg');
+
+}
+
+/* Blog */
+
+.blog {
+
+  max-width: 1410px;
+
+  display: flex;
+  flex-direction: column;
+
+  margin: 0 auto;
+  margin-bottom: 180px;
+}
+
+.blog_title {
+
+  display: flex;
+
+  margin-bottom: 49px;
+
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 47px;
+
+}
+
+.blog_info {
+
+
+
+}
+
+.blog_img {
+
+  float: left;
+
+  margin-right: 60px;
+
+  width: 600px;
+  height: 787px;
+
+  background-image: url('./../imgs/secondblock/blog.svg');
+
+}
+
+.blog_info_date {
+
+  display: flex;
+
+  margin-right: 1px;
+  margin-bottom: 20px;
+
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 47px;
+
+  color: #7A7A7A;
+
+}
+
+.blog_info_title {
+
+  display: flex;
+
+  margin-right: 5px;
+  margin-bottom: 20px;
+
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 65px;
+
+  color: #445950;
+
+}
+
+.blog_info_subtitle {
+
+  display: flex;
+
+  text-align: left;
+
+  margin-right: 1px;
+  margin-bottom: 65px;
+
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 47px;
+
+  color: #445950;
+
+}
+
+.blog_info_button {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-left: 60px;
+
+  width: 183px;
+  height: 62px;
+
+  background: #445950;
+
+}
+
+.blog_info_button_text {
+
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 39px;
+
+  color: #fff;
+
+}
+
+.blog_info_button:hover {
+
+  background: #fff;
+
+  border: 2px solid #445950;
+
+}
+
+.blog_info_button_text:hover {
+
+  color: #445950;
+
+}
+
+/* Impressions */
+
+.impressions {
+
+  max-width: 1410px;
+
+
+
+  margin: 0 auto;
+
+}
+
+.impressions_title {
+
+  display: flex;
+
+  margin-bottom: 49px;
+
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 47px;
+
+
+
+}
+
+.reviews {
+
+
+
+}
+
+.reviews_body {
+
+  display: flex;
+
+}
+
+.reviews_title {
+
+  display: flex;
+
+  margin-bottom: 49px;
+
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 65px;
+
+}
+
+/* First review */
+
+.firstreview {
+
+  display: flex;
+
+  margin-right: 62px;
+
+  width: 810px;
+  height: 446px;
+
+  background-image: url('./../imgs/secondblock/reviews_bgs.svg');
+
+
+
+}
+
+.firstreview_img_body {
+
+  float: left;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-left: 60px;
+
+  flex-direction: column;
+
+}
+
+.firstreview_img {
+
+  display: flex;
+  align-self: center;
+
+  width: 145px;
+  height: 145px;
+
+  background-image: url('./../imgs/secondblock/Tom.svg');
+
+}
+
+.firstreview_name {
+
+  display: flex;
+
+  color: #fff;
+
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+
+}
+
+.firstreview_location {
+
+  display: flex;
+
+  color: #fff;
+
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+
+}
+
+.firstreview_date {
+
+  display: flex;
+
+  color: #fff;
+  
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 24px;
+
+}
+
+.firstreview_comment {
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  position: relative;
+  top: 7px;
+  left: 74px;
+  
+
+}
+
+.comment_title {
+
+  display: flex;
+
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+
+  color: #fff;
+
+  padding-bottom: 10px;
+
+}
+
+.comment_stars_body {
+
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 23px;
+
+}
+
+.comment_stars {
+ 
+  width: 71px;
+  height: 15px;
+  
+  display: flex;
+  align-items: center;
+
+  list-style-type: none;
+
+}
+
+.comment_stars_item {
+
+  display: flex;
+
+  width: 10px;
+  height: 10px;
+  
+  margin-top: 9px;
+
+  background-image: url('./../imgs/secondblock/star.svg');
+
+}
+
+.comment_stars_rate {
+
+  margin-top: 10px;
+  margin-left: 4px;
+
+  display: flex;
+
+
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 15px;
+
+  color: #fff;
+}
+
+.comment_subtitle {
+
+  display: flex;
+
+  text-align: left;
+
+  color: #fff;
+
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+
+}
+
+/* Second review */
+
+.secondreview {
+
+  display: flex;
+
+
+  width: 538px;
+  height: 446px;
+
+  background-image: url('./../imgs/secondblock/reviews_bgs.svg');
+
+
+
+}
+
+.secondreview_img_body {
+
+  float: left;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-left: 60px;
+
+  flex-direction: column;
+
+}
+
+.secondreview_img {
+
+  display: flex;
+  align-self: center;
+
+  width: 145px;
+  height: 145px;
+
+  background-image: url('./../imgs/secondblock/Tom.svg');
+
+}
+
+.secondreview_name {
+
+  display: flex;
+
+  color: #fff;
+
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+
+}
+
+.secondreview_location {
+
+  display: flex;
+
+  color: #fff;
+
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 24px;
+
+}
+
+.secondreview_date {
+
+  display: flex;
+
+  width: 170px;
+
+  color: #fff;
+  
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.secondreview_comment {
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  position: relative;
+  top: 7px;
+  left: 74px;
+  
+
+}
+
+.comment_title {
+
+  display: flex;
+
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+
+  color: #fff;
+
+  padding-bottom: 10px;
+
+}
+
+.comment_stars_body {
+
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 23px;
+
+}
+
+.comment_stars {
+ 
+  width: 71px;
+  height: 15px;
+  
+  display: flex;
+  align-items: center;
+
+  list-style-type: none;
+
+}
+
+.comment_stars_item {
+
+  display: flex;
+
+  width: 10px;
+  height: 10px;
+  
+  margin-top: 9px;
+
+  background-image: url('./../imgs/secondblock/star.svg');
+
+}
+
+.comment_stars_rate {
+
+  margin-top: 10px;
+  margin-left: 4px;
+
+  display: flex;
+
+
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 15px;
+
+  color: #fff;
+}
+
+.comment_subtitle {
+
+  display: flex;
+
+  text-align: left;
+
+  color: #fff;
+
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+
+}
+
+/* Slider */
+
+.reviews_slider {
+
+  display: flex;
+  align-items: flex-end;
+
+
+  height: 123px;
+
+}
+
+.reviews_slider_arrowprev {
+
+  display: flex;
+
+  width: 32px;
+  height: 64px;
+
+  background-image: url('./../imgs/secondblock/arrowprev.svg');
+}
+
+.reviews_sliderarea_body {
+
+  width: 1414px;
+  height: 65px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.reviews_sliderarea {
+
+
+  width: 1240px;
+  height: 12px;
+
+  background: #D9D9D9;
+  border-radius: 589px;
+}
+
+.reviews_sliderarea_scroll {
+
+  width: 230px;
+  height: 14px;
+
+  position: relative;
+  right: -444px;
+  top: -2px;
+
+  background: #245760;
+  border-radius: 589px;
+
+}
+
+.reviews_slider_arrownext {
+
+  width: 36px;
+  height: 64px;
+
+
+  background-image: url('./../imgs/secondblock/arrownext.svg');
+
+}
+
+
+/* Book a trip now */
+
+.trip_form {
+
+  max-width: 1410px;
+
+  margin: 0 auto;
+
+  margin-top: 180px;
+
+}
+
+.trip_form_title {
+
+  display: flex;
+
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 47px;
+
+}
+
+.form_body {
+
+
+
+}
+
+.form_body input {
+
+  display: flex;
+  
+  width: 450px;
+  height: 81px;
+
+
+
+  margin-left: 120px;
+  margin-bottom: 37px;
+
+  padding-left: 19px;
+
+  border: 2px solid #7A7A7A;
+}
+
+input::-webkit-input-placeholder {
+
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+
+  color: rgba(122, 122, 122, 0.31);
+}
+
+.form_body select {
+
+  display: flex;
+
+  appearance: none;
+
+  width: 450px;
+  height: 81px;
+
+  margin-left: 120px;
+  margin-bottom: 37px;
+
+  padding-left: 19px;
+
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+
+  color: #7A7A7A;
+}
+
+.select_arrow {
+
+  
+
+}
+
+.select_arrow_img {
+
+  display: flex;
+
+  position: relative;
+  top: -82px;
+  left: 528px;
+
+  width: 21px;
+  height: 10px;
+
+  background-image: url('./../imgs/secondblock/select_arrow.svg');
+
+}
+
+input[type="button"] {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 450px;
+  height: 81px;
+
+  background: #7A7A7A;
+
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 47px;
+
+  color: #FFFFFF;
+
+}
+
+input:focus {
+
+  border: 4px solid #7A7A7A;
+
+}
+
+.form_title {
+
+  display: flex;
+
+  margin-top: 49px;
+  margin-left: 120px;
+
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 65px;
+
+  color: #8C9EAA;
+
+
+  
+}
+
+
+.form_input_yourname {
+
+  border: 2px solid #7A7A7A;
+
+  margin-top: 47px;
+
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+
+
+}
+
+.form_input_yourlastname {
+
+  border: 2px solid #7A7A7A;
+
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+
+}
+
+.form_input_email {
+
+  border: 2px solid #7A7A7A;
+
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+
+}
+
+.form_input_number {
+
+  border: 2px solid #7A7A7A;
+
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+
+}
+
+.trip_form_img {
+
+  width: 690px;
+  height: 901px;
+
+
+  position: relative;
+  top: -939px;
+  left: 720px;
+
+  margin-bottom: -939px;
+  margin-right: 720px;
+
+  background-image: url('./../imgs/secondblock/Form_img.svg');
+
+}
+
+
+/* Contact  */
+
+.contact {
+
+  max-width: 1410px;
+
+  margin: 0 auto;
+
+  margin-top: 180px;
+
+}
+
+.contact_title {
+
+  display: flex;
+
+  margin-bottom: 49px;
+
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 47px;
+
+}
+
+.contact_info_body {
+
+  display: flex;
+
+
+
+}
+
+.contact_info_img {
+
+  float: left;
+
+  width: 570px;
+  height: 583px;
+
+  background-image: url('./../imgs/secondblock/contact_img.svg');
+
+}
+
+.contact_info_text {
+
+  display: flex;
+  flex-direction: column;
+
+  position: relative;
+  top: 60px;
+
+}
+
+.contact_info_title {
+
+  text-align: left;
+
+  margin-left: 59px;
+  margin-bottom: 49px;
+
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 65px;
+
+  color: #D25A53;
+
+}
+
+.contact_info_location {
+
+  display: flex;
+
+  
+
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 36px;
+
+  color: #7A7A7A;
+
+  margin-bottom: 30px;
+}
+
+.contact_info_location::before {
+
+  display: flex;
+
+  content: '';
+
+  width: 25px;
+  height: 30px;
+
+  margin-left: 60px;
+  margin-right: 17px;
+  
+  background-image: url('./../imgs/secondblock/contact_location.svg');
+
+}
+
+.contact_info_email {
+
+  display: flex;
+
+  margin-bottom: 20px;
+
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 36px;
+
+  color: #7A7A7A;
+}
+
+.contact_info_email::before {
+
+  content: '';
+
+  width: 28px;
+  height: 23px;
+
+  margin-left: 59px;
+  margin-right: 15px;
+  margin-bottom: 31px;
+
+  position: relative;
+  top: 10px;
+
+  background-image: url('./../imgs/secondblock/contact_email.svg');
+
+}
+
+.contact_info_date {
+
+  display: flex;
+
+  text-align: left;
+
+  margin-bottom: 30px;
+
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 36px;
+
+  color: #7A7A7A;
+}
+
+
+
+.contact_info_date::before {
+
+  content: '';
+
+  width: 27px;
+  height: 27px;
+
+  margin-left: 59px;
+  margin-right: 16px;
+
+  position: relative;
+  top: 25px;
+
+  background-image: url('./../imgs/secondblock/contact_date.svg');
+
+}
+
+.contact_info_number {
+  
+  display: flex;
+
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 36px;
+
+  color: #7A7A7A;
+}
+
+.contact_info_number::before {
+
+  content: '';
+
+  width: 22px;
+  height: 22px;
+
+  position: relative;
+  top: 10px;
+
+  margin-left: 62px;
+  margin-right: 20px;
+
+  background-image: url('./../imgs/secondblock/location_number.svg');
+
+}
+
+/* Footer */
+
+.footer {
+
+
+
+  height: 822px;
+
+  margin-top: 470px;
+
+  background: url('./../imgs/secondblock/footer_imgs.svg');
+  background-size: cover;
+
+}
+
+.footer_body {
+
+  display: flex;
+  align-items: center;
+
+
+  max-width: 1410px;
+  height: 822px;
+
+  margin: 0 auto;
+
+}
+
+/* Tours */
+
+.tours {
+  min-width: 150px;
+  height: 415px;
+
+  display: flex;
+  flex-direction: column;
+
+  text-align: left;
+
+  margin-right: 228.1px;
+  
+}
+
+.tours_title {
+
+  display: flex;
+
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 47px;
+
+  color: #FFFFFF;
+
+  margin-bottom: 45px;
+
+}
+
+
+
+.tours_cruise {
+
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 47px;
+
+  color: #FFFFFF;
+
+  margin-bottom: 45px;
+
+}
+
+.tours_cruise:hover {
+
+  color: #FFF500;
+
+}
+
+.tours_author {
+
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 47px;
+
+  color: #FFFFFF;
+
+  margin-bottom: 45px;
+
+}
+
+.tours_author:hover {
+
+  color: #FFF500;
+
+}
+
+.tours_group {
+
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 47px;
+
+  color: #FFFFFF;
+
+  margin-bottom: 45px;
+
+}
+
+.tours_group:hover {
+
+  color: #FFF500;
+
+}
+
+.tours_tour {
+
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 47px;
+
+  color: #FFFFFF;
+
+  margin-bottom: 45px;
+
+}
+
+.tours_tour:hover {
+
+  color: #FFF500;
+
+}
+
+/* Active recreation */
+
+.active_recreation {
+
+  min-width: 218.3px;
+  height: 415px;
+
+  display: flex;
+  flex-direction: column;
+
+  text-align: left;
+
+  margin-right: 199.7px;
+  
+}
+
+
+
+.active_recreation_title {
+
+  display: flex;
+
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 47px;
+
+  color: #FFFFFF;
+
+  margin-bottom: 45px;
+}
+
+.recreation_diving {
+
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 47px;
+
+  color: #FFFFFF;
+
+  margin-bottom: 45px;
+
+}
+
+.recreation_diving:hover {
+
+  color: #FFF500;
+
+}
+
+.recreation_sailing {
+
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 47px;
+
+  color: #FFFFFF;
+
+  margin-bottom: 45px;
+}
+
+.recreation_sailing:hover {
+
+  color: #FFF500;
+
+}
+
+.recreation_fishing {
+
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 47px;
+
+  color: #FFFFFF;
+
+  margin-bottom: 45px;
+}
+
+.recreation_fishing:hover {
+
+  color: #FFF500;
+
+}
+
+.recreation_excursions {
+
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 47px;
+
+  color: #FFFFFF;
+
+  margin-bottom: 45px;
+}
+
+.recreation_excursions:hover {
+
+  color: #FFF500;
+
+}
+
+/* Retreat */
+
+.retreat {
+
+  min-width: 220px;
+  height: 415px;
+
+  display: flex;
+  flex-direction: column;
+
+  text-align: left;
+
+  margin-right: 158px;
+
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 47px;
+
+}
+
+
+
+.retreat_title {
+
+  display: flex;
+
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 47px;
+
+  color: #FFFFFF;
+
+  margin-bottom: 45px;
+}
+
+.retreat_car {
+
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 47px;
+
+  color: #FFFFFF;
+
+  margin-bottom: 45px;
+}
+
+.retreat_car:hover {
+
+  color: #FFF500;
+
+}
+
+.retreat_bicycle {
+
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 47px;
+
+  color: #FFFFFF;
+
+  margin-bottom: 45px;
+}
+
+.retreat_bicycle:hover {
+
+  color: #FFF500;
+
+}
+
+.retreat_tour {
+
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 47px;
+
+  color: #FFFFFF;
+
+  margin-bottom: 45px;
+}
+
+.retreat_tour:hover {
+
+  color: #FFF500;
+
+}
+
+.retreat_house {
+
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 47px;
+
+  color: #FFFFFF;
+
+  margin-bottom: 45px;
+}
+
+.retreat_house:hover {
+
+  color: #FFF500;
+
+}
+
+/* Contact */
+
+.footer_contact {
+
+  min-width: 247px;
+  height: 415px;
+
+  display: flex;
+  flex-direction: column;
+
+  text-align: left;
+
+}
+
+.footer_contact_title {
+
+  display: flex;
+
+  margin-bottom: 46px;
+
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 47px;
+
+  color: #FFFFFF;
+
+}
+
+.footer_contact_img {
+
+  display: flex;
+
+  margin-bottom: 20px;
+
+}
+
+.footer_contact_facebook {
+
+  display: flex;
+
+  width: 21px;
+  height: 34px;
+
+  margin-right: 24.64px;
+
+  background-image: url('./../imgs/secondblock/Facebook.svg') ;
+  background-repeat: no-repeat;
+
+}
+
+.footer_contact_facebook:hover {
+
+  width: 21px;
+  height: 34px;
+
+  background-image: url('./../imgs/secondblock/Facebook_hover.svg');
+
+}
+
+.footer_contact_twitter {
+
+  display: flex;
+
+  width: 37px;
+  height: 31px;
+
+  margin-right: 23.58px;
+
+  background-image: url('./../imgs/secondblock/Twitter.svg');
+}
+
+.footer_contact_twitter:hover {
+
+  background-image: url('./../imgs/secondblock/Twitter_hover.svg');
+
+}
+
+.footer_contact_instagram {
+
+  display: flex;
+
+  width: 35px;
+  height: 35px;
+
+  background-image: url('./../imgs/secondblock/Instagram.svg');
+}
+
+.footer_contact_instagram:hover {
+
+  width: 32.5px;
+  height: 32.5px;
+
+  background-image: url('./../imgs/secondblock/Instagram_hover.svg');
+
+}
+
+.footer_contact_number {
+
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 47px;
+
+  color: #FFFFFF;
+
+  margin-bottom: 18px;
+
+}
+
+.footer_contact_number:hover {
+
+  color: #FFF500;
+
+}
+
+.footer_contact_way {
+
+  margin-bottom: 18px;
+
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 47px;
+
+  color: #FFFFFF;
+
+}
+
+.footer_contact_way:hover {
+
+  color: #FFF500;
+
+}
+
+.footer_contact_cards {
+
+  display: flex;
+
+}
+
+.footer_contact_visa_block {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-right: 14.33px;
+
+  width: 67px;
+  height: 35px;
+
+  border: 0.606061px solid #FFFFFF;
+  border-radius: 3.0303px;
+}
+
+.footer_contact_visa_text {
+
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+
+  color: #fff;
+}
+
+.footer_contact_visa_text:hover {
+
+  color: #FFF500;
+
+}
+
+.footer_contact_mastercard_block {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+  width: 124px;
+  height: 35px;
+
+  border: 0.606061px solid #FFFFFF;
+  border-radius: 3.0303px;
+}
+
+.footer_contact_mastercard_text {
+
+  margin-bottom: 1px;
+
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+
+  color: #FFFFFF;
+
+}
+
+.footer_contact_mastercard_text:hover {
+
+  color: #FFF500;
+
+}
+
+/* Footer logo */
+
+.footer_logo {
+
+  min-width: 199.5px;
+  height: 53px;
+
+  display: flex;
+  justify-content: flex-end;
+  align-self: end;
+
+  position: relative;
+  top: -77px;
+  left: -1425px;
+
+  margin-top: -77px;
+
+  margin-right: -1425px;
+
+}
+
+.footer_logo_text {
+
+  display: flex;
+  align-self: end;
+
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 53px;
+
+  color: #FFFFFF;
+
+}
+
+
+.footer_logo_text::before {
+  content: '';
+
+  width: 0px;
+  height: 100px;
+
+  position: absolute;
+  top: -50px;
+
+  border-bottom: solid #FFF500;
+
+  transition: all .3s ease-in-out;
+
+}
+.footer_logo_text:hover::before {
+
+
+  content: '';
+  
+  width: 200px;
+  height: 100px;
+
+  position: absolute;
+  top: -50px;
+
+  border-bottom: solid #FFF500;
+
+  transition: all .3s ease-in-out;
+
+}
+
+.footer_logo_text::after {
+  content: '';
+
+  width: 0px;
+  height: 100px;
+
+  position: absolute;
+  top: -50px;
+
+  border-bottom: solid #FFF500;
+
+  filter: blur(6px);
+
+  transition: all .3s ease-in-out;
+
+}
+.footer_logo_text:hover::after {
+
+
+  content: '';
+
+  width: 200px;
+  height: 0px;
+
+  position: absolute;
+  top: 45px;
+
+  border-bottom: solid #FFF500;
+
+  filter: blur(6px);
+
+  transition: all .3s ease-in-out;
+
+}
+
+/* Arrow */
+
+.footer_arrow {
+
+  display: flex;
+
+  position: relative;
+  left: 497.5px;
+  top: 305px;
+
+  width: 22px;
+  height: 39px;
+
+  background-image: url('./../imgs/secondblock/arrow_top.svg');
+}
+
+/* Copyright */
+
+.footer_copyright {
+
+  position: relative;
+  left: 1090px;
+  top: 318px;
+
+}
+
+.footer_copyright_text {
+
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 16px;
+
+  color: #FFFFFF;
+
+}

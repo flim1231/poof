@@ -1,3 +1,6 @@
+
+
+
 *,
 *::before,
 *::after {
@@ -88,6 +91,15 @@ select {
 
 /* ///////////////////////////////////////////////////// */
 
+.carousel-indicators {
+
+
+    position: absolute;
+    top: 1000px;
+
+
+}
+
 .head1 {
 }
 
@@ -127,9 +139,9 @@ select {
     width: 150px;
     height: 2px;
 
-    position: absolute;
-    top: 142px;
-    left: 182px;
+    position: relative;
+    top: -96px;
+    left: -41px;
 
     background: #fff;
 
@@ -142,9 +154,9 @@ select {
     width: 150px;
     height: 2px;
 
-    position: absolute;
-    top: 142px;
-    left: 970px;
+    position: relative;
+    top: -96px;
+    left: 9px;
 
     background: #fff;
 
@@ -156,9 +168,13 @@ select {
 
 .header_menu {
 
-    position: absolute;
-    top: 80px;
-    left: 255px;
+    position: relative;
+    top: -1120px;
+    left: 0px;
+
+
+    margin-right: 1300px;
+
 
     z-index: 50;
 }
@@ -214,7 +230,9 @@ select {
     transition: all .3s ease-in-out;
 
 }
-.list_item1:hover::after,.list_item2:hover::after {
+
+.list_item1:hover::after {
+
     content: '';
 
     position: absolute;
@@ -222,7 +240,25 @@ select {
 
 
 
-    width: 64px;
+    width: 50px;
+    height: 10px;
+
+
+    border-bottom: 3px solid #fff;
+
+    transition: all .3s ease-in-out;
+
+}
+
+.list_item2:hover::after {
+    content: '';
+
+    position: absolute;
+    top: 40px;
+
+
+
+    width: 134px;
     height: 10px;
 
 
@@ -271,9 +307,10 @@ select {
 
 .header_logo {
 
-    position: absolute;
-    top: 76px;
-    left: 830px;
+    position: relative;
+    top: -1180px;
+
+
 }
 
 .logo_text {
@@ -292,78 +329,56 @@ select {
 .logo_text::before {
     content: '';
     
-    width: 0px;
-    height: 100px;
-
-    position: absolute;
-    top: -43px;
-
-    border-bottom: solid #FFF500;
-
-    transition: all .3s ease-in-out;
-
-}
-.logo_text:hover::before {
-
-
-    content: '';
-    
     width: 200px;
-    height: 100px;
+    height: 0px;
 
-    position: absolute;
-    top: -43px;
+    display: block;
+
+    position: relative;
+    top: 53px;
+    left: 960px;
+
 
     border-bottom: solid #FFF500;
 
-    transition: all .3s ease-in-out;
+
 
 }
+
 
 .logo_text::after {
     content: '';
     
-    width: 0px;
-    height: 100px;
+    width: 200px;
+    height: 0px;
 
-    position: absolute;
-    left: 0px;
-    top: -43px;
+    display: block;
+
+    position: relative;
+    left: 960px;
+    top: 0px;
 
     border-bottom: solid #FFF500;
 
     filter: blur(6px);
 
-    transition: all .3s ease-in-out;
+
 
 }
-.logo_text:hover::after {
 
-
-    content: '';
-    
-    width: 200px;
-    height: 100px;
-
-    position: absolute;
-    left: 0px;
-    top: -43px;
-
-    border-bottom: solid #FFF500;
-
-    filter: blur(6px);
-
-    transition: all .3s ease-in-out;
-
-} 
 
 /* Header number */
 
 .header_number {
 
-    position: absolute;
-    top: 80px;
-    right: 255px;
+    position: relative;
+    top: -1233px;
+    right: -460px;
+
+
+
+    margin-bottom: 80px;
+    margin-left: 255px;
 
 }
 
@@ -371,11 +386,19 @@ select {
 
     color: #fff;
 
+    text-decoration: none;
+
     font-family: 'Oswald';
     font-style: normal;
     font-weight: 300;
     font-size: 32px;
     line-height: 47px;
+}
+
+.number_text:hover {
+
+    color: #fff;
+
 }
 
 

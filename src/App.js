@@ -8,12 +8,7 @@ function App() {
   return (
     <div className="App">
       <CustomSlider />
-      <TwoBlock >
-                Mountains, rocky cliffs, undulating and smooth like waves in the <br />
-                Atlantic Ocean mountaineering enthusiasts, and just people who want <br />
-                a break from vanity should visit Iceland. 
-
-      </TwoBlock>
+      <TwoBlock />
       <ThreeBlock />
     </div>
   );
