@@ -409,19 +409,19 @@ function FirstBlock() {
 
                     </div>
 
-                    <div className={cl.retreat}>
+                    <ul className={cl.retreat}>
 
-                        <h1 className={cl.retreat_title}>Planning a retreat</h1>
+                        <li className={cl.retreat_title}>Planning a retreat</li>
 
-                        <a href="#" className={cl.retreat_car}>Rent a car</a>
+                        <li href="#" className={cl.retreat_car}>Rent a car</li>
 
-                        <a href="#" className={cl.retreat_bicycle}>Bicycle rental</a>
+                        <li href="#" className={cl.retreat_bicycle}>Bicycle rental</li>
 
-                        <a href="#" className={cl.retreat_tour}>Group tour</a>
+                        <li href="#" className={cl.retreat_tour}>Group tour</li>
 
-                        <a href="#" className={cl.retreat_house}>Rental housing</a>
+                        <li href="#" className={cl.retreat_house}>Rental housing</li>
 
-                    </div>
+                    </ul>
 
                     <div className={cl.footer_contact}>
 
